@@ -6,6 +6,13 @@
                 <div class="banner-content">
                     <h3>{{ title }}</h3>
                     <ol class="breadcrumb">
+                        <template v-for="(link,index) in this.links" :key="index">
+                            <BannerUrl
+                                :countLinks="this.countLinks"
+                                :index="index"
+                                :link="link"
+                            />
+                        </template>
 
                     </ol>
                 </div>
@@ -15,8 +22,11 @@
     </div>
 </template>
 <script>
+import BannerUrl from "@/front/Pages/blocks/BannerUrl.vue";
+
 export default {
     name:"Banners",
+    components: {BannerUrl},
     data(){
         return{
 
@@ -34,35 +44,22 @@ export default {
         img:{
             type:String,
             required:true
+        },
+        countLinks:{
+            type:Number,
+            required:true
         }
     },
     mounted() {
         this.setBannerImg()
-        this.setLinks()
+
     },
     methods:{
         setBannerImg(){
             document.querySelector('.page-banner').style.cssText = 'background: url(' +this.img + ') no-repeat center center;' +
                 'background-size: cover;'
         },
-        setLinks(){
-            let html = '';
-            let item = '';
-            let count = 0;
-            for(item in this.links) {
-                console.log(item)
-                count++;
-            }
 
-            for (let i = 0; i < count; i++) {
-                if(i !== count - 1){
-                    html += '<li><router-link to="'+this.links[i].url+'">'+this.links[i].title+'</router-link></li>'
-                } else {
-                    html += '<li class="active">'+this.links[i].title+'</li>'
-                }
-            }
-            document.querySelector('.breadcrumb').innerHTML = html
-        }
     }
 }
 </script>

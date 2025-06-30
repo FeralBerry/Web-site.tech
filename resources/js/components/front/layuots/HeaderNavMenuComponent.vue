@@ -32,7 +32,7 @@
                             <a title="Logo" href="#" class="navbar-brand"><img :src="'/front/images/logo.png'" alt="Web Site Technology"/></a>
                         </div>
                         <div class="navbar-collapse collapse" id="navbar">
-                                <HeaderMenu :header_links="header_links"/>
+                            <HeaderMenu :header_links="header_links"/>
                         </div>
                     </nav>
                 </div>

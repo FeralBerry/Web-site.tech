@@ -1,5 +1,6 @@
 import Main from "./front/Pages/Main.vue"
 import About from "./front/Pages/About.vue"
+import BlogArticle from "./front/Pages/BlogArticle.vue"
 import Contact from "./front/Pages/Contact.vue"
 import Copies from "./front/Pages/Copies.vue"
 import Blog from "./front/Pages/Blog.vue"
@@ -32,6 +33,11 @@ const routes = [
         path: '/blog',
         component: Blog,
         name: 'front.blog'
+    },
+    {
+        path: '/blog/:id',
+        component: BlogArticle,
+        name: 'front.blog.article'
     },
     {
         path: '/services',

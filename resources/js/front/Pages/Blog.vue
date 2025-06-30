@@ -1,6 +1,6 @@
 <template>
 <div>
-<banners :title="this.title" :links="this.links" :img="this.ing_url"/>
+<banners :title="this.title" :links="this.links" :countLinks="this.countLinks" :img="this.ing_url"/>
 </div>
 </template>
 <script>
@@ -12,7 +12,17 @@ export default {
     data(){
         return{
             title:'Blog',
-            links: {
+            links: null,
+            countLinks:2,
+            ing_url:'/front/images/banners/about-banner.jpg'
+        }
+    },
+    mounted() {
+        this.addLinks()
+    },
+    methods:{
+        addLinks(){
+            this.links = {
                 0: {
                     url: '/',
                     title:'Home'
@@ -21,10 +31,9 @@ export default {
                     url: '/blog',
                     title:'blog'
                 }
-            },
-            ing_url:'/front/images/banners/about-banner.jpg'
+            }
         }
-    },
+    }
 }
 </script>
 <style scoped>

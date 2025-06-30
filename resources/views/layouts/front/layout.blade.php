@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Web Site Technologies</title>
 
     <!-- Standard Favicon -->
@@ -28,7 +29,8 @@
     <!-- Library - Bootstrap v3.3.5 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('front/libraries/lib.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('front/libraries/Stroke-Gap-Icon/stroke-gap-icon.css') }}">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('front/css/remodal.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('front/css/remodal-default-theme.css') }}">
     <!-- Custom - Common CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('front/css/plugins.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('front/css/navigation-menu.css') }}">
@@ -40,7 +42,6 @@
     <!--[if lt IE 9]>
     <script src="{{ asset('front/js/html5/respond.min.js') }}"></script>
     <![endif]-->
-
 </head>
 
 <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
@@ -56,6 +57,7 @@
 </div>
 <script src="{{ asset('/front/js/jquery.min.js') }}"></script>
 <script src="{{ asset('/front/libraries/lib.js') }}"></script>
+<script src="{{ asset('/front/js/remodal.js') }}"></script>
 <script src="{{ asset('/front/libraries/jquery.countdown.min.js') }}"></script>
 <script src="{{ asset('/front/libraries/lightslider-master/lightslider.js') }}"></script>
 <script src="{{ asset('/front/js/functions.js') }}"></script>
