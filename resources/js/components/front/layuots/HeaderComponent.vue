@@ -5,8 +5,6 @@
 
         </div>
         <br>
-        <button data-remodal-action="cancel" class="remodal-cancel">Отменить</button>
-        <button data-remodal-action="confirm" class="remodal-confirm">Сохранить</button>
     </div>
         <!-- Header -->
     <header class="header-main container-fluid no-padding">
@@ -38,7 +36,7 @@
                             </template>
                         </template>
                         <template v-else>
-                            <router-link to="/user" :title="this.$parent.successAuth.name">{{ this.$parent.successAuth.name }}</router-link>
+                            <a href="/home" :title="this.$parent.successAuth[0].name">{{ this.$parent.successAuth[0].name }}</a>
                         </template>
                     </div>
                 </div>
@@ -56,7 +54,7 @@
             HeaderNavMenuComponent
         },
         mounted() {
-
+            this.checkAuth()
         },
         methods:{
             changeLanguage(){
@@ -74,28 +72,28 @@
                 let html
                 const csrf = document.querySelector('meta[name="csrf-token"]').content
                 if(this.$parent.lang === 'eng'){
-                    html = '<form method="POST" action="/login">\n' +
+                    html = '<form method="POST" id="login" action="/login">\n' +
                         '       <input type="hidden" name="_token" value="' + csrf + '" />\n' +
-                        '                        <div class="row mb-3">\n' +
-                        '                            <label for="email" class="col-md-4 col-form-label text-md-end">Email Address</label>\n' +
-                        '                            <div class="col-md-6">\n' +
-                        '                                <input id="email" type="email" class="form-control" name="email" required autocomplete="email" autofocus>\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="row mb-3">\n' +
-                        '                            <label for="password" class="col-md-4 col-form-label text-md-end">Password</label>\n' +
-                        '                            <div class="col-md-6">\n' +
-                        '                                <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password">\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="row mb-0">\n' +
-                        '                            <div class="col-md-8 offset-md-4">\n' +
-                        '                                <button type="submit" class="btn btn-primary">\n' +
-                        '                                    Login \n' +
-                        '                                </button>\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                    </form>'
+                        '       <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '           <label for="email" class="col-md-4 col-form-label text-md-end">Email Address</label>\n' +
+                        '           <div class="col-md-8">\n' +
+                        '               <input id="email" type="email" class="form-control" name="email" required autocomplete="email" autofocus>\n' +
+                        '           </div>\n' +
+                        '        </div>\n' +
+                        '        <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '           <label for="password" class="col-md-4 col-form-label text-md-end">Password</label>\n' +
+                        '           <div class="col-md-8">\n' +
+                        '               <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password">\n' +
+                        '           </div>\n' +
+                        '        </div>\n' +
+                        '        <div class="row mb-0">\n' +
+                        '            <div class="col-md-4">\n' +
+                        '            </div>\n' +
+                        '            <div class="col-md-8" style="text-align: left">\n' +
+                        '               <button type="submit" class="remodal-confirm">Login</button>\n' +
+                        '            </div>\n' +
+                        '        </div>\n' +
+                        '    </form>'
                 }
                 if(this.$parent.lang === 'rus'){
                     html = '<form method="POST" action="/login">\n' +
@@ -114,9 +112,9 @@
                         '                        </div>\n' +
                         '                        <div class="row mb-0">\n' +
                         '                            <div class="col-md-8 offset-md-4">\n' +
-                        '                                <button type="submit" class="btn btn-primary">\n' +
+                        '                                <a type="submit" class="btn-send">\n' +
                         '                                    Войти \n' +
-                        '                                </button>\n' +
+                        '                                </a>\n' +
                         '                            </div>\n' +
                         '                        </div>\n' +
                         '                    </form>'
@@ -155,7 +153,7 @@
                         '                        </div>\n' +
                         '                        <div class="row mb-0">\n' +
                         '                            <div class="col-md-6 offset-md-4">\n' +
-                        '                                <button type="submit" class="btn btn-primary">Register</button>\n' +
+                        '                                <a type="submit" class="btn-send">Register</a>\n' +
                         '                            </div>\n' +
                         '                        </div>\n' +
                         '                    </form>\n' +
@@ -169,7 +167,16 @@
                     html = ''
                 }
                 document.getElementById('modal_body').innerHTML = html
-            }
+            },
+            checkAuth(){
+                let user_id = document.querySelector('meta[name="user_id"]').content
+                if(user_id !== ''){
+                    axios.post('/api/front/check_auth/' + user_id)
+                        .then(res => {
+                            this.$parent.successAuth = res.data
+                        })
+                }
+            },
         }
     }
 </script>

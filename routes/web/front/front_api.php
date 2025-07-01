@@ -15,6 +15,9 @@ $path = [
     'prefix' => 'front'
 ];
 Route::group($path,function() {
+    // проверка авторизации пользователя возвращает данные авторизированного пользователя
+    Route::post('/check_auth/{user_id}',['uses' => 'CheckAuthController@checkAuth', 'as' => 'checkAuth']);
+
     Route::get('/main_slider',['uses' => 'MainSliderController@index', 'as' => 'front-main-slider-index']);
     Route::get('/advantages',['uses' => 'AdvantagesController@index', 'as' => 'front-advantages-index']);
     Route::get('/development-technologies',['uses' => 'DevelopmentTechnologiesController@index', 'as' => 'front-development-technologies-index']);

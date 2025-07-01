@@ -12,6 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="user_id" content="{{ Auth::id() || 0 }}">
     <title>Web Site Technologies</title>
 
     <!-- Standard Favicon -->
@@ -27,10 +28,10 @@
     <link rel="apple-touch-icon-precomposed" href="{{ asset('front/images/apple-icon-57x57.png') }}">
 
     <!-- Library - Bootstrap v3.3.5 -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('front/libraries/lib.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('front/libraries/Stroke-Gap-Icon/stroke-gap-icon.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('front/css/remodal.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('front/css/remodal-default-theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('front/libraries/lib.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('front/libraries/Stroke-Gap-Icon/stroke-gap-icon.css') }}">
     <!-- Custom - Common CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('front/css/plugins.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('front/css/navigation-menu.css') }}">
