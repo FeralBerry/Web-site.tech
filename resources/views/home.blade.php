@@ -1,6 +1,6 @@
 @if(Auth::user()->role === 1)
-    @include('layouts.back.admin.layout')
+    <script>window.location = "/admin";</script>
 @elseif(Auth::user()->role === 2)
-    @include('layouts.back.user.layout')
+    <script>window.location = "/user";</script>
 @endif
 
