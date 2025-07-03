@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Auth;
 
 class BackController extends Controller
 {
+    protected function userSettings(){
+        return UserSettings::where('user_id',Auth::id());
+    }
     protected function authUserLang(){
         $user_settings = UserSettings::where('user_id',Auth::id());
         if(empty($user_settings)){

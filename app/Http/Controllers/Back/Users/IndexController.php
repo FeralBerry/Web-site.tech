@@ -17,7 +17,7 @@ class IndexController extends BackController
             $item->setAttribute('breadcrumbMenuPage',$breadcrumbMenuPage);
         }
         $data = [
-            'lang' => $this->authUserLang(),
+            'userSettings' => $this->userSettings(),
             'breadcrumb' => $breadcrumbMenu
         ];
         return view('back.user.index',$data);

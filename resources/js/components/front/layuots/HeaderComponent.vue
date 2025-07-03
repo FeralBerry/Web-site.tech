@@ -62,17 +62,26 @@
                     this.$parent.lang = 'rus'
                     document.getElementById('lang_button').innerHTML = 'RU'
                     this.$refs.headerNavMenuComponent.changeHeaderLinks(this.$parent.lang)
+                    document.getElementById('modal_body').innerHTML = ''
                 } else {
                     this.$parent.lang = 'eng'
                     document.getElementById('lang_button').innerHTML = 'EN'
                     this.$refs.headerNavMenuComponent.changeHeaderLinks(this.$parent.lang)
+                    document.getElementById('modal_body').innerHTML = ''
                 }
             },
             loginModal(){
                 let html
                 const csrf = document.querySelector('meta[name="csrf-token"]').content
                 if(this.$parent.lang === 'eng'){
-                    html = '<form method="POST" id="login" action="/login">\n' +
+                    html = '<div class="row">' +
+                        '<div class="col-md-12">' +
+                        '<img src="/logo-big-blue.png" style="\n' +
+                        '    width: 200px;\n' +
+                        '    margin-bottom: 20px;\n' +
+                        '"></div> ' +
+                        '</div>' +
+                        '<form method="POST" id="login" action="/login">\n' +
                         '       <input type="hidden" name="_token" value="' + csrf + '" />\n' +
                         '       <div class="row mb-3" style="margin-bottom: 10px">\n' +
                         '           <label for="email" class="col-md-4 col-form-label text-md-end">Email Address</label>\n' +
@@ -96,28 +105,36 @@
                         '    </form>'
                 }
                 if(this.$parent.lang === 'rus'){
-                    html = '<form method="POST" action="/login">\n' +
+                    html = '<div class="row">' +
+                        '       <div class="col-md-12">' +
+                        '           <img src="/logo-big-blue.png" style="\n' +
+                        '    width: 200px;\n' +
+                        '    margin-bottom: 20px;\n' +
+                        '">' +
+                        '       </div> ' +
+                        '   </div>' +
+                        '   <form method="POST" action="/login">\n' +
                         '       <input type="hidden" name="_token" value="' + csrf + '" />\n' +
-                        '                        <div class="row mb-3">\n' +
-                        '                            <label for="email" class="col-md-4 col-form-label text-md-end">Email</label>\n' +
-                        '                            <div class="col-md-6">\n' +
-                        '                                <input id="email" type="email" class="form-control" name="email" required autocomplete="email" autofocus>\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="row mb-3">\n' +
-                        '                            <label for="password" class="col-md-4 col-form-label text-md-end">Пароль</label>\n' +
-                        '                            <div class="col-md-6">\n' +
-                        '                                <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password">\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="row mb-0">\n' +
-                        '                            <div class="col-md-8 offset-md-4">\n' +
-                        '                                <a type="submit" class="btn-send">\n' +
-                        '                                    Войти \n' +
-                        '                                </a>\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                    </form>'
+                        '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '                 <label for="email" class="col-md-4 col-form-label text-md-end">Email</label>\n' +
+                        '                 <div class="col-md-6">\n' +
+                        '                     <input id="email" type="email" class="form-control" name="email" required autocomplete="email" autofocus>\n' +
+                        '                 </div>\n' +
+                        '             </div>\n' +
+                        '             <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '                  <label for="password" class="col-md-4 col-form-label text-md-end">Пароль</label>\n' +
+                        '                  <div class="col-md-6">\n' +
+                        '                       <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password">\n' +
+                        '                  </div>\n' +
+                        '             </div>\n' +
+                        '             <div class="row mb-0">\n' +
+                        '                  <div class="col-md-4">\n' +
+                        '                  </div>\n' +
+                        '                  <div class="col-md-8" style="text-align: left">\n' +
+                        '                      <button type="submit" class="remodal-confirm">Войти</button>\n' +
+                        '                  </div>\n' +
+                        '              </div>\n' +
+                        '          </form>'
                 }
                 document.getElementById('modal_body').innerHTML = html
             },
@@ -125,46 +142,100 @@
                 let html
                 const csrf = document.querySelector('meta[name="csrf-token"]').content
                 if(this.$parent.lang === 'eng'){
-                    html = '<form method="POST" action="/register">\n' +
+                    html = '<div class="row">' +
+                        '       <div class="col-md-12">' +
+                        '           <img src="/logo-big-blue.png" style="\n' +
+                        '    width: 200px;\n' +
+                        '    margin-bottom: 20px;\n' +
+                        '">' +
+                        '       </div> ' +
+                        '   </div>' +
+                        '   <form method="POST" action="/register" onsubmit="event.preventDefault(); registerValidator();">\n' +
                         '       <input type="hidden" name="_token" value="' + csrf + '" />\n' +
-                        '                        <div class="row mb-3">\n' +
-                        '                            <label for="name" class="col-md-4 col-form-label text-md-end">Name</label>\n' +
-                        '                            <div class="col-md-6">\n' +
-                        '                                <input id="name" type="text" class="form-control" name="name" required autocomplete="name" autofocus>\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="row mb-3">\n' +
-                        '                            <label for="email" class="col-md-4 col-form-label text-md-end">Email Address</label>\n' +
-                        '                            <div class="col-md-6">\n' +
-                        '                                <input id="email" type="email" class="form-control" name="email" required autocomplete="email">\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="row mb-3">\n' +
-                        '                            <label for="password" class="col-md-4 col-form-label text-md-end">Password</label>\n' +
-                        '                            <div class="col-md-6">\n' +
-                        '                                <input id="password" type="password" class="form-control" name="password" required autocomplete="new-password">\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="row mb-3">\n' +
-                        '                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">Confirm Password</label>\n' +
-                        '                            <div class="col-md-6">\n' +
-                        '                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="row mb-0">\n' +
-                        '                            <div class="col-md-6 offset-md-4">\n' +
-                        '                                <a type="submit" class="btn-send">Register</a>\n' +
-                        '                            </div>\n' +
-                        '                        </div>\n' +
-                        '                    </form>\n' +
+                        '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '               <label for="reg_name" class="col-md-4 col-form-label text-md-end">Name</label>\n' +
+                        '               <div class="col-md-8">\n' +
+                        '                    <input id="reg_name" type="text" class="form-control" name="name" required autocomplete="name" autofocus>\n' +
+                        '               </div>\n' +
+                        '               <div class="col-md-12" id="reg_name_alert" style="display: none;color: #ff6400">The name must be between 3 and 50 characters long.</div>'+
+                        '            </div>\n' +
+                        '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '                <label for="reg_email" class="col-md-4 col-form-label text-md-end">Email Address</label>\n' +
+                        '                <div class="col-md-8">\n' +
+                        '                     <input id="reg_email" type="email" class="form-control" name="email" required autocomplete="email">\n' +
                         '                </div>\n' +
                         '            </div>\n' +
-                        '        </div>\n' +
-                        '    </div>\n' +
-                        '</div>'
+                        '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '                 <label for="reg_password" class="col-md-4 col-form-label text-md-end">Password</label>\n' +
+                        '                 <div class="col-md-8">\n' +
+                        '                      <input id="reg_password" type="password" class="form-control" name="password" required autocomplete="new-password">\n' +
+                        '                  <a href="#" class="password-control"></a>' +
+                        '</div>\n' +
+                        '               <div class="col-md-12" id="reg_pass_alert" style="display: none;color: #ff6400">The password must be between 8 and 50 characters long.</div>'+
+                        '             </div>\n' +
+                        '             <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '                  <label for="reg_password-confirm" class="col-md-4 col-form-label text-md-end">Confirm Password</label>\n' +
+                        '                  <div class="col-md-8">\n' +
+                        '                        <input id="reg_password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">\n' +
+                        '                  </div>\n' +
+                        '               <div class="col-md-12" id="reg_confirm_alert" style="display: none;color: #ff6400">The password and the password confirmation must match.</div>'+
+                        '              </div>\n' +
+                        '              <div class="row mb-0">\n' +
+                        '                  <div class="col-md-4">\n' +
+                        '                  </div>\n' +
+                        '                  <div class="col-md-8" style="text-align: left">\n' +
+                        '                      <button type="submit" class="remodal-confirm">Register</button>\n' +
+                        '                  </div>\n' +
+                        '              </div>\n' +
+                        '      </form>';
                 }
                 if(this.$parent.lang === 'rus'){
-                    html = ''
+                    html = '<div class="row">' +
+                        '       <div class="col-md-12">' +
+                        '           <img src="/logo-big-blue.png" style="\n' +
+                        '    width: 200px;\n' +
+                        '    margin-bottom: 20px;\n' +
+                        '">' +
+                        '       </div> ' +
+                        '   </div>' +
+                        '   <form method="POST" action="/register" onsubmit="event.preventDefault(); registerValidator();">\n' +
+                        '       <input type="hidden" name="_token" value="' + csrf + '" />\n' +
+                        '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '               <label for="reg_name" class="col-md-4 col-form-label text-md-end">Имя</label>\n' +
+                        '               <div class="col-md-8">\n' +
+                        '                    <input id="reg_name" type="text" class="form-control" name="name" required autocomplete="name" autofocus>\n' +
+                        '               </div>\n' +
+                        '               <div class="col-md-12" id="reg_name_alert" style="display: none;color: #ff6400">Имя должно быть от 3 до 50 символов.</div>'+
+                        '            </div>\n' +
+                        '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '                <label for="reg_email" class="col-md-4 col-form-label text-md-end">Email</label>\n' +
+                        '                <div class="col-md-8">\n' +
+                        '                     <input id="reg_email" type="email" class="form-control" name="email" required autocomplete="email">\n' +
+                        '                </div>\n' +
+                        '            </div>\n' +
+                        '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '                 <label for="reg_password" class="col-md-4 col-form-label text-md-end">Пароль</label>\n' +
+                        '                 <div class="col-md-8">\n' +
+                        '                      <input id="reg_password" type="password" class="form-control" name="password" required autocomplete="new-password">\n' +
+                        '                  <a href="#" class="password-control"></a>' +
+                        '</div>\n' +
+                        '               <div class="col-md-12" id="reg_pass_alert" style="display: none;color: #ff6400">Пароль должен быть от 8 до 50 символов.</div>'+
+                        '             </div>\n' +
+                        '             <div class="row mb-3" style="margin-bottom: 10px">\n' +
+                        '                  <label for="reg_password-confirm" class="col-md-4 col-form-label text-md-end">Подтверждение пароля</label>\n' +
+                        '                  <div class="col-md-8">\n' +
+                        '                        <input id="reg_password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">\n' +
+                        '                  </div>\n' +
+                        '               <div class="col-md-12" id="reg_confirm_alert" style="display: none;color: #ff6400">Пароль и подтверждение пароля должны совпадать.</div>'+
+                        '              </div>\n' +
+                        '              <div class="row mb-0">\n' +
+                        '                  <div class="col-md-4">\n' +
+                        '                  </div>\n' +
+                        '                  <div class="col-md-8" style="text-align: left">\n' +
+                        '                      <button type="submit" class="remodal-confirm">Зарегистироваться</button>\n' +
+                        '                  </div>\n' +
+                        '              </div>\n' +
+                        '      </form>';
                 }
                 document.getElementById('modal_body').innerHTML = html
             },

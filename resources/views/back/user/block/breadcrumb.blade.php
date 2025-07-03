@@ -1,6 +1,12 @@
 <div class="app-content-header">
     <!--begin::Container-->
     <div class="container-fluid">
+        @php
+        $lang = null;
+        foreach ($userSettings as $settings){
+            $lang = $settings->lang;
+        }
+        @endphp
         @if(isset($breadcrumb))
             @foreach($breadcrumb as $item)
                 @php

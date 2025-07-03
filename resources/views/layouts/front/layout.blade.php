@@ -65,5 +65,46 @@
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
 <!--<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>-->
 @vite(['resources/js/app.js'])
+<script>
+    function registerValidator() {
+        const name = document.getElementById('reg_name').value
+        const pass = document.getElementById('reg_password').value
+        const confirm = document.getElementById('reg_password-confirm').value
+
+        if(name.length < 2 || name.length > 50){
+            document.getElementById('reg_name_alert').style.display = 'block'
+            setTimeout(() => {document.getElementById('reg_name_alert').style.display = 'none'}, 5000)
+            return false;
+        }
+        if(pass.length < 7 || pass.length > 50){
+            document.getElementById('reg_pass_alert').style.display = 'block'
+            setTimeout(() => {document.getElementById('reg_pass_alert').style.display = 'none'}, 5000)
+            return false;
+        }
+        if(pass !== confirm){
+            document.getElementById('reg_confirm_alert').style.display = 'block'
+            setTimeout(() => {document.getElementById('reg_confirm_alert').style.display = 'none'}, 5000)
+            return false;
+        }
+        return true;
+    }
+    $('body').on('click', '.password-control', function(){
+        if ($('#reg_password').attr('type') === 'password'){
+            $(this).addClass('view');
+            $('#reg_password').attr('type', 'text');
+        } else {
+            $(this).removeClass('view');
+            $('#reg_password').attr('type', 'password');
+        }
+        if ($('#reg_password-confirm').attr('type') === 'password'){
+            $(this).addClass('view');
+            $('#reg_password-confirm').attr('type', 'text');
+        } else {
+            $(this).removeClass('view');
+            $('#reg_password-confirm').attr('type', 'password');
+        }
+        return false;
+    });
+</script>
 </body>
 </html>
