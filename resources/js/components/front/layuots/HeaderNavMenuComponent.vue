@@ -63,30 +63,12 @@ import HeaderMenu from "@/components/front/layuots/HeaderNavSwitch/HeaderMenu.vu
                         url: {name:'front.services'}
                     },
                     copiesOfWork:{
-                        dropMenu:{
-                            name: 'Copies of work',
-                            link: {
-                                0: {
-                                    name: 'All',
-                                    url: {
-                                        name: 'front.copies',
-                                    }
-                                },
-                            }
-                        }
+                        name: 'Copies of work',
+                        url: {name:'front.copies'}
                     },
                     lastNews:{
-                        dropMenu: {
-                            name:'News',
-                            link:{
-                                0:{
-                                    name:'All',
-                                    url:{
-                                        name:'front.blog'
-                                    }
-                                },
-                            }
-                        }
+                        name: 'News',
+                        url: {name:'front.blog'}
                     },
                     contact:{
                         name:'Contact',
@@ -105,9 +87,7 @@ import HeaderMenu from "@/components/front/layuots/HeaderNavSwitch/HeaderMenu.vu
                     this.header_links.about.name = 'Обо мне'
                     this.header_links.services.name = 'Услуги'
                     this.header_links.copiesOfWork.dropMenu.name = 'Работы'
-                    this.header_links.copiesOfWork.dropMenu.link.name = 'Все'
                     this.header_links.lastNews.dropMenu.name = 'Новости'
-                    this.header_links.lastNews.dropMenu.link.name = 'Все'
                     this.header_links.contact.name = 'Контакты'
                 }
                 if(lang === 'eng'){
@@ -115,9 +95,7 @@ import HeaderMenu from "@/components/front/layuots/HeaderNavSwitch/HeaderMenu.vu
                     this.header_links.about.name = 'About'
                     this.header_links.services.name = 'Services'
                     this.header_links.copiesOfWork.dropMenu.name = 'Copies of work'
-                    this.header_links.copiesOfWork.dropMenu.link.name = 'All'
                     this.header_links.lastNews.dropMenu.name = 'News'
-                    this.header_links.lastNews.dropMenu.link.name = 'All'
                     this.header_links.contact.name = 'Contact'
                 }
             },

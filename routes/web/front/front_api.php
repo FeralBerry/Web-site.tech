@@ -19,6 +19,8 @@ Route::group($path,function() {
     Route::post('/check_auth/{user_id}',['uses' => 'CheckAuthController@checkAuth', 'as' => 'checkAuth']);
 
     Route::get('/main_slider',['uses' => 'MainSliderController@index', 'as' => 'front-main-slider-index']);
+    Route::get('/about_slider',['uses' => 'AboutSliderController@index', 'as' => 'front-about-slider-index']);
+
     Route::get('/advantages',['uses' => 'AdvantagesController@index', 'as' => 'front-advantages-index']);
     Route::get('/development-technologies',['uses' => 'DevelopmentTechnologiesController@index', 'as' => 'front-development-technologies-index']);
     Route::post('/app-for-dev',['uses' => 'ApplicationForDevelopmentController@index', 'as' => 'front-app-for-dev-index']);
