@@ -1,269 +1,138 @@
 <template>
 <div>
-    <banners :title="this.title" :links="this.links" :countLinks="this.countLinks" :img="this.ing_url"/>
+    <banners :title="this.title" :links="this.links" :countLinks="this.countLinks" :img="this.img_url"/>
     <div class="container-fluid eventlist blog blogpost upcoming-event latest-blog no-padding">
         <div class="section-padding"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-sm-6 content-area">
-                    <article class="type-post">
+                    <article class="type-post" v-for="(item,index) in article">
                         <div class="entry-cover">
-                            <img src="" alt="blog-post" width="810" height="376"/>
+                            <template v-if="this.$parent.$parent.lang === 'eng'">
+                                <img :src="item.img" :alt="item.title_eng" width="810" height="376"/>
+                            </template>
+                            <template v-if="this.$parent.$parent.lang === 'rus'">
+                                <img :src="item.img" :alt="item.title_ru" width="810" height="376"/>
+                            </template>
                         </div>
                         <div class="entry-block">
                             <div class="entry-meta">
                                 <div class="post-date">
-                                    <a href="#" title=""><i class="fa fa-calendar" aria-hidden="true"></i><span>10 Feb, 2016 </span></a>
+                                    <a href="#" title=""><i class="fa fa-calendar" aria-hidden="true"></i><span>{{ new Date(item.created_at).toLocaleDateString() }}</span></a>
                                 </div>
                                 <div class="post-admin">
-                                    <i class="fa fa-user" aria-hidden="true"></i><span>by</span><a href="#" title="Admin">Admin</a>
+                                    <i class="fa fa-user" aria-hidden="true"></i><span>by</span>{{ item.author }}
                                 </div>
                                 <div class="post-like">
-                                    <a href="#" title="Likes"><i class="fa fa-heart-o" aria-hidden="true"></i></a><span>03 Likes</span>
+                                    <template v-if="this.blog_likes === undefined">
+                                        <a @click="this.blog_like(item.id)" title="Likes">
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i><span>{{ item.likes }}</span>
+                                        </a>
+                                    </template>
                                 </div>
-                                <div class="post-share">
-                                    <a href="#" title="Share"><i class="fa fa-share-alt" aria-hidden="true"></i></a><span><a href="#" title="Share">Share Post</a></span>
-                                </div>
-                                <div class="post-tag">
+<!--                                <div class="post-tag">
                                     <a href="#" title="Tag"><i class="fa fa-tag" aria-hidden="true"></i></a>
                                     <ul>
                                         <li><a href="#" title="Event Management">Event Management</a></li>
                                         <li><a href="#" title="Organizing">Organizing</a></li>
                                         <li><a href="#" title="Meeting">Meeting</a></li>
                                     </ul>
+                                </div>-->
+                            </div>
+                            <template v-if="this.$parent.$parent.lang === 'eng'">
+                                <div class="entry-title">
+                                    <h3>{{ item.title_eng }}</h3>
                                 </div>
-                            </div>
-                            <div class="entry-title">
-                                <h3>We know Flipper lives in a world full of wonder flying there under under the sea</h3>
-                            </div>
-                            <div class="entry-content">
-                                <p>Flatning the hills Someday the mountain might get them but the law never will! Makin their way the only way how. Love life's sweetest reward Let it flow it floats. Back to you fleeing who does not exist. Here's the story of a man named Brady who was busy with three boys of his own.</p>
-                                <blockquote>
-                                    <p>Beats all you've ever saw been in trouble with the law since the day they was born the story of a man named Brady who was busy with three boys of his own You would see the biggest gift would be from me </p>
-                                    <cite title="Alfred Marshal"><i class="fa fa-quote-right" aria-hidden="true"></i>- Alfred Marshal</cite>
-                                </blockquote>
-                                <p>Today still wanted by the government they survive as soldiers of fortune. Five passengers set sail that day for a three hour tour a three hour tour ashadowy flight into the dangerous world.</p>
-                                <div class="entry-thumbnail">
-                                    <img src="" alt="blog-post1" width="380" height="280"/>
-                                    <p>Today still wanted by the government they survive as soldiers of fortune. Five passengers set sail that day for a three hour tour a three hour tour.</p>
-                                    <p>A shadowy flight into the dangerous world of a man who does not exist. Here's the story of a man named Brady who was busy with three boys of his own.  You would see the biggest gift would be from me and the card attached would say thank you for being a friend. Movin' on up to the east side. We finally got a piece of the pie.</p>
+                                <div class="entry-content" v-html="item.description_eng">
                                 </div>
-                                <p>Flipper lives in a world full of wonder flying there-under under the sea. Well the first thing you know ol' Jeds a millionaire. Kinfolk said Jed move away from there. It's time to play the music. It's time to light the lights. It's time to meet the Muppets on the Muppet Show tonight.</p>
-                            </div>
+                            </template>
+                            <template v-if="this.$parent.$parent.lang === 'rus'">
+                                <div class="entry-title">
+                                    <h3>{{ item.title_ru }}</h3>
+                                </div>
+                                <div class="entry-content" v-html="item.description_ru">
+                                </div>
+                            </template>
                         </div>
                     </article>
-
-                    <div class="about-author">
-                        <div class="author-intro">
-                            <img alt="author" src="" width="150" height="150"/>
-                            <a href="#" title="John Cristopher">Author - John Cristopher</a>
-                            <ul>
-                                <li class="fb"><a class="facebook-color" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="twt"><a class="twitter-color" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="gp"><a class="linkedin-color" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="lnk"><a class="twitter-color" href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                            <p>You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. They're creepy and they're kooky mysterious and spooky. They're all together ooky the Addams Family.</p>
-                        </div>
-                    </div>
-                    <!-- Post Comment -->
-                    <div class="post-comment">
-                        <h3><span>3</span> Comments</h3>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#" title="Mark hendry">
-                                    <img alt="Avtar" src="" class="media-object" width="97" height="97"/>
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-content">
-                                    <h4 class="media-heading">
-                                        Mark hendry<span>Dec 11, 2015</span><a href="#"><i class="fa fa-reply"></i>Reply</a>
-                                    </h4>
-                                    <p>The Love Boat soon will be making another run. The Love Boat something for everyone. Their house is a museum where people come to see ‘em.</p>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#" title="Alfred Marshal">
-                                            <img alt="Alfred Marshal" src="" class="media-object" width="97" height="97"/>
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="media-content">
-                                            <h4 class="media-heading">
-                                                Alfred Marshal<span>Dec 12, 2015</span><a href="#"><i class="fa fa-reply"></i>Reply</a>
-                                            </h4>
-                                            <p>The Love Boat soon will be making another run. The Love Boat something for everyone. Their house is a museum where people come to see ‘em.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#" title="Stephen Hawk">
-                                    <img alt="Stephen Hawk" src="" class="media-object" width="97" height="97"/>
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-content last">
-                                    <h4 class="media-heading">
-                                        Stephen Hawk<span>Oct 28, 2015</span><a href="#"><i class="fa fa-reply"></i>Reply</a>
-                                    </h4>
-                                    <p>The Love Boat soon will be making another run. The Love Boat something for everyone. Their house is a museum where people come to see ‘em.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- Post Comment /- -->
-                    <form class="comment-form">
-                        <h3>Leave A Message</h3>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" required="" placeholder="Your Name*" class="form-control"/>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="text" required="" placeholder="Email Address*" class="form-control"/>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <textarea placeholder="Your Comment*" rows="8" class="form-control"></textarea>
-                            </div>
-                            <input type="submit" value="Submit Comment" name="Submit Comment" title="Submit Comment"/>
-                        </div>
-                    </form>
+                    <blog-comment/>
                 </div>
-                <div class="col-md-3 col-sm-6 widget-area">
-                    <aside class="widget widget-search">
-                        <div class="input-group">
-                            <input type="text" placeholder="Search..." class="form-control">
-                            <span class="input-group-btn">
-								<button type="button" class="btn"><i class="fa fa-search"></i></button>
-							</span>
-                        </div>
-                    </aside>
-
-                    <aside class="widget widget_categories">
-                        <div class="widget-title">
-                            <span class="icon icon-PaperClip"></span>
-                            <h3>Categories</h3>
-                        </div>
-                        <ul>
-                            <li><a title="Internal Conference" href="#">Internal Conference<span>09</span></a></li>
-                            <li><a title="Event Management" href="#">Event Management<span>10</span></a></li>
-                            <li><a title="Industrial Meeting" href="#">Industrial Meeting<span>16</span></a></li>
-                            <li><a title="Paper Meetups" href="#">Paper Meetups<span>11</span></a></li>
-                            <li><a title="Charity Events" href="#">Charity Events<span>13</span></a></li>
-                        </ul>
-                    </aside>
-                    <aside class="widget widget_event">
-                        <div class="event-block">
-                            <h3>January 03-07</h3>
-                            <p>09, Design Street, New York, United States </p>
-                            <div class="event-content">
-                                <img src="" alt="slider-thumb" width="74" height="74"/>
-                                <h4>Daniel Lesner<span>public speaker</span></h4>
-                            </div>
-                            <a title="Register now" href="#">Register Now</a>
-                        </div>
-                    </aside>
-                    <aside class="widget widget_recent">
-                        <div class="widget-title">
-                            <span class="icon icon-Notes"></span>
-                            <h3>Latest News</h3>
-                        </div>
-                        <div class="recent-block">
-                            <div class="recent-content">
-                                <a href="#"><img src="" alt="RecentPost" width="72" height="72"/></a>
-                                <h3><a href="#">On my way to where the air is sweet</a></h3>
-                                <a href="#">12 Jan 2016</a>
-                            </div>
-                            <div class="recent-content">
-                                <a href="#"><img src="" alt="RecentPost" width="72" height="72"/></a>
-                                <h3><a href="#">Beats all you've ever say been in trouble</a></h3>
-                                <a href="#">29 Dec 2015</a>
-                            </div>
-                            <div class="recent-content">
-                                <a href="#"><img src="" alt="RecentPost" width="72" height="72"/></a>
-                                <h3><a href="#">Now the world due to just a drum</a></h3>
-                                <a href="#">18 Nov 2015</a>
-                            </div>
-                        </div>
-                    </aside>
-                    <aside class="widget widget_archives widget_categories">
-                        <div class="widget-title">
-                            <span class="icon icon-PaperClip"></span>
-                            <h3>Archives</h3>
-                        </div>
-                        <ul>
-                            <li><a title="December 2015" href="#">December 2015<span>12</span></a></li>
-                            <li><a title="November 2015" href="#">November 2015<span>18</span></a></li>
-                            <li><a title="October 2015" href="#">October 2015<span>21</span></a></li>
-                            <li><a title="September 2015" href="#">September 2015<span>18</span></a></li>
-                            <li><a title="August 2015" href="#">August 2015<span>13</span></a></li>
-                        </ul>
-                    </aside>
-                    <aside class="widget widget_tags">
-                        <div class="widget-title">
-                            <span class="icon icon-Tag"></span>
-                            <h3>Popular Tags</h3>
-                        </div>
-                        <div class="tag-block">
-                            <a title="Event" href="#">Event</a>
-                            <a title="Meetings" href="#">Meetings</a>
-                            <a title="Charity" href="#">Charity</a>
-                            <a title="Communication" href="#">Communication</a>
-                            <a title="Schedule" href="#">Schedule</a>
-                            <a title="Conference" href="#">Conference</a>
-                            <a title="Services" href="#">Services</a>
-                        </div>
-                    </aside>
-                </div>
+                <right-side-bar-blog/>
             </div>
         </div>
         <div class="section-padding"></div>
     </div>
-    {{ article }}
 </div>
 </template>
 <script>
 
 import Banners from "@/front/Pages/blocks/Banners.vue";
+import RightSideBarBlog from "@/front/Pages/blocks/RightSideBarBlog/RightSideBarBlog.vue";
+import BlogComment from "@/front/Pages/blocks/BlogComment.vue";
 
 export default {
     name: 'BlogArticle',
-    components: {Banners},
+    components: {BlogComment, Banners,RightSideBarBlog},
     data(){
         return{
             article:null,
             title:'',
             links: null,
-            countLinks:2,
-            ing_url:'/front/images/banners/about-banner.jpg'
+            countLinks:3,
+            img_url:'/front/images/banners/about-banner.jpg',
+            blog_likes: null,
         }
     },
     mounted() {
         this.getArticleInfo()
-        this.addBannerLinks()
     },
     methods:{
         getArticleInfo(){
             axios.get('/api/front/blog/' + this.$route.params.id)
                 .then(res => {
-                    this.article = res.data
+                    this.article = res.data.blog
+                    this.blog_likes = res.data.blog_likes.data
+                    if(this.$parent.$parent.lang === 'eng'){
+                        this.links = {
+                            0: {
+                                url: '/',
+                                title:'Home'
+                            },
+                            1: {
+                                url: '/blog',
+                                title:'blog'
+                            },
+                            2: {
+                                url: '/blog/' + res.data.blog[0].id,
+                                title:res.data.blog[0].title_eng
+                            }
+                        }
+                        this.title = res.data.blog[0].title_eng
+                    } else if(this.$parent.$parent.lang === 'ru'){
+                        this.links = {
+                            0: {
+                                url: '/',
+                                title:'Главная'
+                            },
+                            1: {
+                                url: '/blog',
+                                title:'Блог'
+                            },
+                            2: {
+                                url: '/blog/' + res.data.blog[0].id,
+                                title: res.data.blog[0].title_ru
+                            }
+                        }
+                        this.title = res.data.blog[0].title_ru
+                    }
                 })
         },
-        addBannerLinks(){
-            console.log(this.$parent.lang)
-            this.links = {
-                0: {
-                    url: '/',
-                    title:'Home'
-                },
-                1: {
-                    url: '/blog',
-                    title:'blog'
-                }
-            }
-        }
+        blog_like(id){
+            axios.post('/api/front/blog_likes/' + id)
+                .then(res => {
+                    alert(res.data)
+                })
+        },
     }
 }
 </script>

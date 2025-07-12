@@ -86,16 +86,16 @@ import HeaderMenu from "@/components/front/layuots/HeaderNavSwitch/HeaderMenu.vu
                     this.header_links.home.name = 'Главная'
                     this.header_links.about.name = 'Обо мне'
                     this.header_links.services.name = 'Услуги'
-                    this.header_links.copiesOfWork.dropMenu.name = 'Работы'
-                    this.header_links.lastNews.dropMenu.name = 'Новости'
+                    this.header_links.copiesOfWork.name = 'Работы'
+                    this.header_links.lastNews.name = 'Новости'
                     this.header_links.contact.name = 'Контакты'
                 }
                 if(lang === 'eng'){
                     this.header_links.home.name = 'Home'
                     this.header_links.about.name = 'About'
                     this.header_links.services.name = 'Services'
-                    this.header_links.copiesOfWork.dropMenu.name = 'Copies of work'
-                    this.header_links.lastNews.dropMenu.name = 'News'
+                    this.header_links.copiesOfWork.name = 'Copies of work'
+                    this.header_links.lastNews.name = 'News'
                     this.header_links.contact.name = 'Contact'
                 }
             },

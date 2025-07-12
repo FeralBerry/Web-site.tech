@@ -61,3 +61,4 @@
         });
     });
 </script>
+@vite(['resources/js/user.js'])

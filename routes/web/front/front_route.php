@@ -4,5 +4,5 @@ $path = [
     'namespace' => 'App\Http\Controllers\Front',
 ];
 Route::group($path,function() {
-    Route::get('/{any?}', ['uses' => 'IndexController@index','as' => 'front-index'])->where('any','.*');
+    Route::get('/', ['uses' => 'IndexController@index','as' => 'front-index']);
 });

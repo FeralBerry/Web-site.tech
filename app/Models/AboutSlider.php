@@ -10,7 +10,6 @@ class AboutSlider extends Model
     protected $fillable = [
         'img',
         'alt_img',
-        'mini_img',
         'title_ru',
         'title_eng',
         'slider_p_ru',

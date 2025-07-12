@@ -70,6 +70,7 @@
                     document.getElementById('modal_body').innerHTML = ''
                 }
             },
+
             loginModal(){
                 let html
                 const csrf = document.querySelector('meta[name="csrf-token"]').content
@@ -150,7 +151,7 @@
                         '">' +
                         '       </div> ' +
                         '   </div>' +
-                        '   <form method="POST" action="/register" onsubmit="event.preventDefault(); registerValidator();">\n' +
+                        '   <form method="POST" id="reg_form" action="/register" onsubmit="return registerValidator(event)">\n' +
                         '       <input type="hidden" name="_token" value="' + csrf + '" />\n' +
                         '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
                         '               <label for="reg_name" class="col-md-4 col-form-label text-md-end">Name</label>\n' +
@@ -198,7 +199,7 @@
                         '">' +
                         '       </div> ' +
                         '   </div>' +
-                        '   <form method="POST" action="/register" onsubmit="event.preventDefault(); registerValidator();">\n' +
+                        '   <form method="POST" id="reg_form" action="/register" onsubmit="return registerValidator(event)">\n' +
                         '       <input type="hidden" name="_token" value="' + csrf + '" />\n' +
                         '            <div class="row mb-3" style="margin-bottom: 10px">\n' +
                         '               <label for="reg_name" class="col-md-4 col-form-label text-md-end">Имя</label>\n' +
@@ -248,6 +249,7 @@
                         })
                 }
             },
+
         }
     }
 </script>

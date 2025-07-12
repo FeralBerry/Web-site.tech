@@ -6,6 +6,5 @@ $back = [
     'prefix' => 'user',
 ];
 Route::group($back, function (){
-    Route::get('/', ['uses' => 'IndexController@index','as' => 'user-index']);
+    Route::get('/{any?}', ['uses' => 'IndexController@index','as' => 'user-index'])->where('any','.*');
 });
-

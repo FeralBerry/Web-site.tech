@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="user_id" content="{{ Auth::id() || 0 }}">
+    <meta name="user_id" content="{{ Auth::id() ?? 0 }}">
     <title>Web Site Technologies</title>
 
     <!-- Standard Favicon -->
@@ -66,10 +66,12 @@
 <!--<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>-->
 @vite(['resources/js/app.js'])
 <script>
-    function registerValidator() {
+    function registerValidator(e) {
+        e.preventDefault()
         const name = document.getElementById('reg_name').value
         const pass = document.getElementById('reg_password').value
         const confirm = document.getElementById('reg_password-confirm').value
+        const reg_form = document.getElementById('reg_form')
 
         if(name.length < 2 || name.length > 50){
             document.getElementById('reg_name_alert').style.display = 'block'
@@ -86,6 +88,7 @@
             setTimeout(() => {document.getElementById('reg_confirm_alert').style.display = 'none'}, 5000)
             return false;
         }
+        reg_form.submit()
         return true;
     }
     $('body').on('click', '.password-control', function(){

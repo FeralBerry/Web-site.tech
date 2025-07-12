@@ -1514,7 +1514,7 @@
 	left: 20px;
 }
 .blog.upcoming-event.latest-blog .entry-meta {
-	background-color: #feca16;
+	background-color: #ff6400;
 	padding-left: 18px;
 	color: #fff;
 	line-height: 35px;
@@ -1772,7 +1772,7 @@
 	right: 8px;
 	width: 0;
 	height: 0;
-	border-top: 21px solid #feca16;
+	border-top: 21px solid #ff6400;
 	border-right: 21px solid transparent;
 }
 .post-comment .media-left a::after {
@@ -1806,7 +1806,7 @@
 	text-transform: uppercase;
 }
 .post-comment .media-body .media-heading span {
-	color: #feca16;
+	color: #ff6400;
 }
 .post-comment .media-body .media-heading a {
 	color: #777;
