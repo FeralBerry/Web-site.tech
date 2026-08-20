@@ -13,18 +13,14 @@ class SomeExamplesController extends Controller
 
     public function index(): \Illuminate\Database\Eloquent\Collection
     {
-        $someExample = SomeExamples::all();
-        $someExampleImg = SomeExamplesImg::all();
-        foreach ($someExample as $item){
-            foreach ($someExampleImg as $img){
-                if($item->small_img_id == $img->block_id){
-
-                    $someExample['small_img'] = 1;
-                }
-            }
-
+        return SomeExamples::all()->sortBy('created_at')->take(2);
+    }
+    public function article($id){
+        $someExample = SomeExamples::where('id',$id)->get();
+        if(isset($someExample)){
+            return $someExample;
+        } else {
+            abort(404);
         }
-
-        return $someExample;
     }
 }

@@ -6,9 +6,9 @@
                 <div class="banner-content">
                     <h3>{{ title }}</h3>
                     <ol class="breadcrumb">
-                        <template v-for="(link,index) in this.links" :key="index">
+                        <template v-for="(link,index) in this.$props.links" :key="index">
                             <BannerUrl
-                                :countLinks="this.countLinks"
+                                :countLinks="this.$props.countLinks"
                                 :index="index"
                                 :link="link"
                             />
@@ -29,37 +29,31 @@ export default {
     components: {BannerUrl},
     data(){
         return{
-
+            title: null,
+            links: null,
+            countLinks: null,
+            img: null
         }
     },
-    props:{
-        title:{
-            type:String,
-            required:true
-        },
-        links:{
-            type:Object,
-            required:true
-        },
-        img:{
-            type:String,
-            required:true
-        },
-        countLinks:{
-            type:Number,
-            required:true
-        }
+    props:[
+        'title',
+        'links',
+        'img',
+        'key',
+        'countLinks'
+    ],
+
+    beforeMount() {
+        this.$parent.addLinks()
     },
     mounted() {
         this.setBannerImg()
-
     },
     methods:{
         setBannerImg(){
-            document.querySelector('.page-banner').style.cssText = 'background: url(' +this.img + ') no-repeat center center;' +
+            document.querySelector('.page-banner').style.cssText = 'background: url(' +this.$props.img + ') no-repeat center center;' +
                 'background-size: cover;'
         },
-
     }
 }
 </script>

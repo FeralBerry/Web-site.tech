@@ -1,0 +1,11 @@
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=small-standard.html"><span class="mi"></span><span class="txt">Small Standard</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=medium-standard.html"><span class="mi"></span><span class="txt">Medium Standard</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=large-standard.html"><span class="mi"></span><span class="txt">Large Standard</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=small-image.html"><span class="mi"></span><span class="txt">Small Image</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=medium-image.html"><span class="mi"></span><span class="txt">Medium Image</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=large-image.html"><span class="mi"></span><span class="txt">Large Image</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=small-image-nogap.html"><span class="mi"></span><span class="txt">Small Image No Gap</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=medium-image-nogap.html"><span class="mi"></span><span class="txt">Medium Image No Gap</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="great-happy-woman.html"><span class="mi"></span><span class="txt">Single Project Simple</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="projects_layout=wide.html"><span class="mi"></span><span class="txt">Single Project Wide</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="painting-and-repairing.html"><span class="mi"></span><span class="txt">Single Project Extended</span><span class="di icon-arrow-right9"></span></a></li>

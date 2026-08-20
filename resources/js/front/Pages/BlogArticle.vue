@@ -1,6 +1,6 @@
 <template>
 <div>
-    <banners :title="this.title" :links="this.links" :countLinks="this.countLinks" :img="this.img_url"/>
+    <banners :title="this.title" :links="this.links" :countLinks="this.countLinks" :img="this.img_url" :key="this.$parent.$parent.bannerKey"/>
     <div class="container-fluid eventlist blog blogpost upcoming-event latest-blog no-padding">
         <div class="section-padding"></div>
         <div class="container">
@@ -77,10 +77,13 @@ export default {
         return{
             article:null,
             title:'',
+            id:0,
             links: null,
             countLinks:3,
             img_url:'/front/images/banners/about-banner.jpg',
             blog_likes: null,
+            title_eng:null,
+            title_ru:null,
         }
     },
     mounted() {
@@ -92,40 +95,45 @@ export default {
                 .then(res => {
                     this.article = res.data.blog
                     this.blog_likes = res.data.blog_likes.data
-                    if(this.$parent.$parent.lang === 'eng'){
-                        this.links = {
-                            0: {
-                                url: '/',
-                                title:'Home'
-                            },
-                            1: {
-                                url: '/blog',
-                                title:'blog'
-                            },
-                            2: {
-                                url: '/blog/' + res.data.blog[0].id,
-                                title:res.data.blog[0].title_eng
-                            }
-                        }
-                        this.title = res.data.blog[0].title_eng
-                    } else if(this.$parent.$parent.lang === 'ru'){
-                        this.links = {
-                            0: {
-                                url: '/',
-                                title:'Главная'
-                            },
-                            1: {
-                                url: '/blog',
-                                title:'Блог'
-                            },
-                            2: {
-                                url: '/blog/' + res.data.blog[0].id,
-                                title: res.data.blog[0].title_ru
-                            }
-                        }
-                        this.title = res.data.blog[0].title_ru
-                    }
+                    this.id = res.data.blog[0].id
+                    this.title_eng = res.data.blog[0].title_eng
+                    this.title_ru = res.data.blog[0].title_ru
                 })
+        },
+        addLinks(){
+            if(this.$parent.$parent.lang === 'eng'){
+                this.links = {
+                    0: {
+                        url: '/',
+                        title:'Home'
+                    },
+                    1: {
+                        url: '/blog',
+                        title:'Blog'
+                    },
+                    2: {
+                        url: '/blog/' + this.id,
+                        title: this.title_eng
+                    }
+                }
+                this.title = this.title_eng
+            } else if(this.$parent.$parent.lang === 'rus'){
+                this.links = {
+                    0: {
+                        url: '/',
+                        title:'Главная'
+                    },
+                    1: {
+                        url: '/blog',
+                        title:'Блог'
+                    },
+                    2: {
+                        url: '/blog/' + this.id,
+                        title: this.title_ru
+                    }
+                }
+                this.title = this.title_ru
+            }
         },
         blog_like(id){
             axios.post('/api/front/blog_likes/' + id)

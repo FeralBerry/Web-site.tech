@@ -25,7 +25,7 @@
                         </router-link>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6 register">
-                        <template v-if="this.$parent.successAuth === null">
+                        <template v-if="this.$parent.successAuth == null">
                             <template v-if="this.$parent.lang === 'eng'">
                                 <a @click="loginModal()" title="Login" style="margin: 5px" data-remodal-target="modal">Login</a>
                                 <a @click="registerModal()" title="Register" data-remodal-target="modal">Register</a>
@@ -50,6 +50,11 @@
     import HeaderNavMenuComponent from "@/components/front/layuots/HeaderNavMenuComponent.vue";
     export default {
         name: 'HeaderComponent',
+        data(){
+            return{
+
+            }
+        },
         components: {
             HeaderNavMenuComponent
         },
@@ -63,14 +68,18 @@
                     document.getElementById('lang_button').innerHTML = 'RU'
                     this.$refs.headerNavMenuComponent.changeHeaderLinks(this.$parent.lang)
                     document.getElementById('modal_body').innerHTML = ''
+                    this.forceBannerRerender()
                 } else {
                     this.$parent.lang = 'eng'
                     document.getElementById('lang_button').innerHTML = 'EN'
                     this.$refs.headerNavMenuComponent.changeHeaderLinks(this.$parent.lang)
                     document.getElementById('modal_body').innerHTML = ''
+                    this.forceBannerRerender()
                 }
             },
-
+            forceBannerRerender() {
+                this.$parent.bannerKey += 1
+            },
             loginModal(){
                 let html
                 const csrf = document.querySelector('meta[name="csrf-token"]').content
@@ -242,7 +251,7 @@
             },
             checkAuth(){
                 let user_id = document.querySelector('meta[name="user_id"]').content
-                if(user_id !== ''){
+                if(user_id !== '0'){
                     axios.post('/api/front/check_auth/' + user_id)
                         .then(res => {
                             this.$parent.successAuth = res.data

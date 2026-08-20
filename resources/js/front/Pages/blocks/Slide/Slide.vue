@@ -1,6 +1,6 @@
 <template>
     <transition name="slide">
-        <div v-if="index === currentSlide" class="carousel-inner">
+        <div v-if="index === currentSlide" class="carousel-inner" :id="'carousel-inner_' + this.currentSlide">
             <div class="item active">
                 <img :id="'carousel-img_' + this.currentSlide" class="carousel-img" :src="this.slide.img" :alt="this.slide.alt_img" style="position: absolute"/>
                     <div class="container">
@@ -80,17 +80,26 @@ export default {
             }
         },
         sliderHeight(){
+            let height
+            height = window.innerWidth *2/4
+            let carousel_inner = document.getElementsByClassName('carousel-inner')
+            for (let i = 0; i < carousel_inner.length; i++){
+                document.getElementById('carousel-inner_' + this.currentSlide).style.height =  height + 'px'
+            }
             if(window.innerWidth > 600){
-                this.mainSliderContentBoxHeight = (document.getElementById('carousel-img_' + this.currentSlide).height * 80 /100) + 'px'
-                document.getElementById('main_slider').style.height = document.getElementById('carousel-img_' + this.currentSlide).height + 'px'
+                this.mainSliderContentBoxHeight = height * 6/10 + 'px'
+                document.getElementById('main_slider').style.height = height + 'px'
             } else {
                 this.mainSliderContentBoxHeight = '200px'
             }
-
             window.addEventListener('resize', (e) => {
+                height = window.innerWidth*2/4
+                for (let i = 0; i < carousel_inner.length; i++){
+                    document.getElementById('carousel-inner_' + this.currentSlide).style.height =  height + 'px'
+                }
                 if(window.innerWidth > 600){
-                    this.mainSliderContentBoxHeight = (document.getElementById('carousel-img_' + this.currentSlide).height * 80 /100) + 'px'
-                    document.getElementById('main_slider').style.height = document.getElementById('carousel-img_' + this.currentSlide).height + 'px'
+                    this.mainSliderContentBoxHeight = height  * 6/10 + 'px'
+                    document.getElementById('main_slider').style.height = height + 'px'
                 } else {
                     this.mainSliderContentBoxHeight = '200px'
                 }

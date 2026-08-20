@@ -1,15 +1,15 @@
 <template>
     <div class="menu-block no-padding">
             <div class="container">
-                <template v-if="this.$parent.$parent.successAuth === null">
-                    <router-link to="/auth" class="user" title="User">
+                <template v-if="this.$parent.$parent.successAuth == null">
+                    <a @click="this.$parent.loginModal()" data-remodal-target="modal" class="user" title="User">
                         <i class="fa fa-user"></i>
-                    </router-link>
+                    </a>
                 </template>
                 <template v-else>
-                    <router-link to="/user" class="user" title="User">
+                    <a href="/user" class="user" title="User">
                         <i class="fa fa-user"></i>
-                    </router-link>
+                    </a>
                 </template>
                 <div class="menu-search">
                     <div id="sb-search" class="sb-search">
@@ -45,7 +45,6 @@ import HeaderMenu from "@/components/front/layuots/HeaderNavSwitch/HeaderMenu.vu
     export default {
         name: 'HeaderNavMenuComponent',
         mounted() {
-            this.resizeNavMenu()
         },
         data(){
             return{
@@ -99,17 +98,7 @@ import HeaderMenu from "@/components/front/layuots/HeaderNavSwitch/HeaderMenu.vu
                     this.header_links.contact.name = 'Contact'
                 }
             },
-            resizeNavMenu(){
-                if(window.innerWidth < 600){
-                    document.getElementById('nav_menu').style.width = window.innerWidth
-                }
-                window.addEventListener("resize", function() {
-                    if(window.innerWidth < 600){
-                        document.getElementById('nav_menu').style.width = window.innerWidth
-                    }
-                });
 
-            }
         }
     }
 </script>

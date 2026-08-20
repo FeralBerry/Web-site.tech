@@ -1,11 +1,11 @@
 <template>
-        <AboutSlide v-for="(slide,index) in this.sliderInfo"
-               :key="index"
-               :slide="slide"
-               :index="index"
-                :slider="this.sliderInfo"
-               :sliderLength="this.sliderLength"
-        />
+    <AboutSlide v-for="(slide,index) in this.sliderInfo"
+           :key="index"
+           :slide="slide"
+           :index="index"
+            :slider="this.sliderInfo"
+           :sliderLength="this.sliderLength"
+    />
 </template>
 <script>
 import AboutSlide from "@/front/Pages/blocks/Slide/AboutSlide.vue";

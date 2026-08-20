@@ -58,7 +58,7 @@
             </template>
         </template>
     </div>
-    <template v-if="this.user_id !== ''">
+    <template v-if="this.$parent.$parent.$parent.successAuth !== null">
         <form class="comment-form" id="comment-form" @submit.prevent="sendComment();" method="POST" :action="'/api/front/blog/add_comment/' + this.$route.params.id">
             <template v-if="this.$parent.$parent.$parent.lang === 'eng'">
                 <div class="row">
@@ -77,6 +77,18 @@
                 </div>
             </template>
         </form>
+    </template>
+    <template v-if="this.$parent.$parent.$parent.successAuth == null">
+        <template v-if="this.$parent.$parent.$parent.lang === 'eng'">
+            <h4>
+                To leave a comment, you need to register
+            </h4>
+        </template>
+        <template v-if="this.$parent.$parent.$parent.lang === 'rus'">
+            <h4>
+                Чтобы оставить комментарий нужно заргистрироваться
+            </h4>
+        </template>
     </template>
 </template>
 <script>
@@ -180,3 +192,7 @@ export default {
     height: 75%;
 }
 </style>
+<script setup>
+</script>
+<script setup>
+</script>

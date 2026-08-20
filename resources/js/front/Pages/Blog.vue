@@ -1,6 +1,12 @@
 <template>
 <div>
-<banners :title="this.title" :links="this.links" :countLinks="this.countLinks" :img="this.ing_url"/>
+<banners
+    :title="this.title"
+    :links="this.links"
+    :countLinks="this.countLinks"
+    :img="this.img_url"
+    :key="this.$parent.$parent.bannerKey"
+/>
     <div class="container-fluid eventlist blog upcoming-event latest-blog no-padding">
         <div class="section-padding"></div>
         <div class="container">
@@ -103,7 +109,7 @@ export default {
             title:'Blog',
             links: null,
             countLinks:2,
-            ing_url:'/front/images/banners/about-banner.jpg',
+            img_url:'/front/images/banners/about-banner.jpg',
             blog: null,
             last_page: null,
             first_page: null,
@@ -118,16 +124,37 @@ export default {
     },
     methods:{
         addLinks(){
-            this.links = {
-                0: {
-                    url: '/',
-                    title:'Home'
-                },
-                1: {
-                    url: '/blog',
-                    title:'blog'
+            if(this.$parent.$parent.lang === 'eng'){
+                this.title = 'Blog'
+                this.links = {
+                    0: {
+                        url: '/',
+                        title:'Home'
+                    },
+                    1: {
+                        url: '/blog',
+                        title:'blog'
+                    }
                 }
+                this.countLinks = 2
+                this.img_url ='/front/images/banners/about-banner.jpg'
             }
+            if(this.$parent.$parent.lang === 'rus'){
+                this.title = 'Блог'
+                this.links = {
+                    0: {
+                        url: '/',
+                        title:'Главная'
+                    },
+                    1: {
+                        url: '/blog',
+                        title:'блог'
+                    }
+                }
+                this.countLinks = 2
+                this.img_url ='/front/images/banners/about-banner.jpg'
+            }
+
         },
         getBlogInfo(){
             axios.get('/api/front/blog')

@@ -5,7 +5,9 @@ import Contact from "./front/Pages/Contact.vue"
 import Copies from "./front/Pages/Copies.vue"
 import Blog from "./front/Pages/Blog.vue"
 import Services from "./front/Pages/Services.vue"
+import ServiceArticle from "./front/Pages/blocks/ServiceArticle.vue"
 import Auth from "./front/Pages/Auth.vue"
+import CopiesArticle from "@/front/Pages/CopiesArticle.vue"
 
 
 const routes = [
@@ -30,6 +32,11 @@ const routes = [
         name: 'front.copies'
     },
     {
+        path: '/copies/:id',
+        component: CopiesArticle,
+        name: 'front.copies.example'
+    },
+    {
         path: '/blog',
         component: Blog,
         name: 'front.blog'
@@ -43,6 +50,11 @@ const routes = [
         path: '/services',
         component: Services,
         name: 'front.services'
+    },
+    {
+        path: '/services/:id',
+        component: ServiceArticle,
+        name: 'front.service.article'
     },
     {
         path: '/auth',

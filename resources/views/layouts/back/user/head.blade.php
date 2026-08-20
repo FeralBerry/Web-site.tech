@@ -51,4 +51,5 @@
     <!--begin::Required Plugin(AdminLTE)-->
     <link rel="stylesheet" href="{{ asset('/back/user/css/adminlte.css') }}" />
     <!--end::Required Plugin(AdminLTE)-->
+
 </head>
