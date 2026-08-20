@@ -9,7 +9,8 @@ export default defineConfig({
             input: [
                 'resources/js/app.js',
                 'resources/js/user.js',
-                'resources/js/frontJS/front_app.js'
+                'resources/js/frontJS/front_app.js',
+                'resources/css/front/style.css'
             ],
             refresh: true,
 
