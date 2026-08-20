@@ -225,18 +225,18 @@
                         <aside class="widget widget-latestposts">
                             <h3 class="widget-title">Latest Posts</h3>
                             <div class="latest-content">
-                                <a href="{{ route('bovile-blog-post') }}"><img src="{{ asset('front/bovile/images/blog/latest-post1.jpg') }}" alt="blogpost-thumb1"></a>
-                                <h3><a href="{{ route('bovile-blog-post') }}">Goodness lemur save much alas crud dear</a></h3>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}"><img src="{{ asset('front/bovile/images/blog/latest-post1.jpg') }}" alt="blogpost-thumb1"></a>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}">Goodness lemur save much alas crud dear</a></h3>
                                 <span>09 Oct 2015</span>
                             </div>
                             <div class="latest-content">
-                                <a href="{{ route('bovile-blog-post') }}"><img src="{{ asset('front/bovile/images/blog/latest-post2.jpg') }}'" alt="blogpost-thumb2"></a>
-                                <h3><a href="{{ route('bovile-blog-post') }}">However much enor mous merrily jeez</a></h3>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}"><img src="{{ asset('front/bovile/images/blog/latest-post2.jpg') }}'" alt="blogpost-thumb2"></a>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}">However much enor mous merrily jeez</a></h3>
                                 <span>22 Nov 2015</span>
                             </div>
                             <div class="latest-content">
-                                <a href="{{ route('bovile-blog-post') }}"><img src="{{ asset('front/bovile/images/blog/latest-post3.jpg') }}" alt="blogpost-thumb3"></a>
-                                <h3><a href="{{ route('bovile-blog-post') }}">Flinched more mam moth this pompously</a></h3>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}"><img src="{{ asset('front/bovile/images/blog/latest-post3.jpg') }}" alt="blogpost-thumb3"></a>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}">Flinched more mam moth this pompously</a></h3>
                                 <span>04 Dec 2015</span>
                             </div>
                         </aside>

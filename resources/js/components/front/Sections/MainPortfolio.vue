@@ -60,7 +60,7 @@ export default defineComponent({
     methods:{
         openModal(url){
             this.modalVision = true
-            this.modalUrl = url
+            this.modalUrl = window.location.origin + url
         },
         getMainPortfolio(){
             let data = {
@@ -69,6 +69,7 @@ export default defineComponent({
             axios.post('/api/main/portfolio',data)
                 .then((res) => {
                     this.portfolio = res.data.data
+
                     if (res.data.current_page === res.data.last_page){
                         this.maxPortfolio = false
                     }

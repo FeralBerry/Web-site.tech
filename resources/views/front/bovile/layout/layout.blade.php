@@ -90,7 +90,7 @@
         <div class="footer-bottom col-md-12 col-sm-12 col-xs-12 no-padding">
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-6 copyright">
-                    <p>&copy; Copyright 2016. All Rights Reserved</p>
+                    <p>&copy; Copyright 2016. All Rights Reserved. Template by <a href="https://web-site.tech">Web-site.tech</a></p>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-6">
                     <ul>

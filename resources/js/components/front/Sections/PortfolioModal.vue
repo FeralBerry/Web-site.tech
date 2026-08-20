@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="col-md-12">
-                <iframe :src="'https://web-site.tech'+this.$parent.modalUrl" class="modal-content"></iframe>
+                <iframe :src="this.$parent.modalUrl" class="modal-content"></iframe>
             </div>
         </div>
     </div>

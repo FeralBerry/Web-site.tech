@@ -2,15 +2,10 @@
 
 namespace App\Http\Controllers\Front\Projects\Brand;
 
-use App\Http\Controllers\Controller;
 
-class IndexController extends Controller
+use App\Http\Controllers\Front\Projects\ProjectsController;
+
+class IndexController extends ProjectsController
 {
 
-    public function index(){
-        $data = array_merge([
-
-        ]);
-        return view('front.brand.index', $data);
-    }
 }

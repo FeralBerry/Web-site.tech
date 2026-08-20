@@ -54,3 +54,4 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/105941561" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
+{{--@include('layouts.front.disable_dev_tools')--}}

@@ -2,14 +2,9 @@
 
 namespace App\Http\Controllers\Front\Projects\Clothing;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Front\Projects\ProjectsController;
 
-class IndexController extends Controller
+class IndexController extends ProjectsController
 {
-    public function index(){
-        $data = array_merge([
 
-        ]);
-        return view('front.clothing.index', $data);
-    }
 }

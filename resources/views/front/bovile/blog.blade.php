@@ -30,7 +30,7 @@
                     <div class="content-area content-area75 col-md-9 col-sm-8">
                         <article class="type-post blog-onecolumn format-image">
                             <div class="entry-cover">
-                                <a href="{{ route('bovile-blog-post') }}" title="Cover"><img src="{{ asset('front/bovile/images/blog/blog1.jpg') }}" alt="blog1"/></a>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Cover"><img src="{{ asset('front/bovile/images/blog/blog1.jpg') }}" alt="blog1"/></a>
                                 <div class="entry-meta">
                                     <div class="post-date">
                                         <p><span>20</span>December 2015</p>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                             <div class="entry-title">
-                                <h3><a href="{{ route('bovile-blog-post') }}" title="Blog Title">The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper of the fearless crew the Minnow would be lost</a></h3>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Blog Title">The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper of the fearless crew the Minnow would be lost</a></h3>
                             </div>
                             <div class="entry-content">
                                 <p>Take a step that is new. We've a loveable spa that needs your face threes company too. I have always wanted to have a like you The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail that day for a three hour tour a three hour tour. Said Californ'y is the place you ought to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.</p>
@@ -60,7 +60,7 @@
                         </article>
                         <article class="type-post blog-onecolumn format-image">
                             <div class="entry-cover">
-                                <a href="{{ route('bovile-blog-post') }}" title="Cover"><img src="{{ asset('front/bovile/images/blog/blog2.jpg') }}" alt="blog1"/></a>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Cover"><img src="{{ asset('front/bovile/images/blog/blog2.jpg') }}" alt="blog1"/></a>
                                 <div class="entry-meta">
                                     <div class="post-date">
                                         <p><span>12</span>November 2015</p>
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="entry-title">
-                                <h3><a href="{{ route('bovile-blog-post') }}" title="Blog Title">Its a neighborly day in this beautywood a neighborly day for a beauty On your mark get set and go now make our dream come true to the best</a></h3>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Blog Title">Its a neighborly day in this beautywood a neighborly day for a beauty On your mark get set and go now make our dream come true to the best</a></h3>
                             </div>
                             <div class="entry-content">
                                 <p>Their house is a museum where people come to see &#180;em. They really are a scream the Addams Family. Just two good ol' boys Wouldn't change if they could. Fightin' the system like a true modern day Robin Hood! Well we're movin' on up to the east side. To a deluxe apartment in the sky? Come and dance on our floor. Till the one day when the lady met this fellow and they knew it was much more than a hunch.</p>
@@ -90,7 +90,7 @@
                         </article>
                         <article class="type-post blog-onecolumn format-image">
                             <div class="entry-cover">
-                                <a href="{{ route('bovile-blog-post') }}" title="Cover"><img src="{{ asset('front/bovile/images/blog/blog3.jpg') }}" alt="blog1"/></a>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Cover"><img src="{{ asset('front/bovile/images/blog/blog3.jpg') }}" alt="blog1"/></a>
                                 <div class="entry-meta">
                                     <div class="post-date">
                                         <p><span>07</span>Octomber 2015</p>
@@ -112,7 +112,7 @@
                                 </div>
                             </div>
                             <div class="entry-title">
-                                <h3><a href="{{ route('bovile-blog-post') }}" title="Blog Title">Today still wanted by the government they survive as soldiers of fortune Believe it or not I'm walking on air on a broomstick you can crawl on</a></h3>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Blog Title">Today still wanted by the government they survive as soldiers of fortune Believe it or not I'm walking on air on a broomstick you can crawl on</a></h3>
                             </div>
                             <div class="entry-content">
                                 <p>Here's the story of a man named Brady who was busy with three boys of his own. Got kind of tired packin' and unpackin' - town to town and up and down the dial. It's time to put on makeup. It's time to dress up right. It's time to raise the curtain on the Muppet Show tonight? The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the millionaire and his wife they survive as soldiers.</p>
@@ -120,7 +120,7 @@
                         </article>
                         <article class="type-post blog-onecolumn format-image">
                             <div class="entry-cover">
-                                <a href="{{ route('bovile-blog-post') }}" title="Cover"><img src="{{ asset('front/bovile/images/blog/blog4.jpg') }}" alt="blog1"/></a>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Cover"><img src="{{ asset('front/bovile/images/blog/blog4.jpg') }}" alt="blog1"/></a>
                                 <div class="entry-meta">
                                     <div class="post-date">
                                         <p><span>14</span>September 2015</p>
@@ -142,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="entry-title">
-                                <h3><a href="{{ route('bovile-blog-post') }}" title="Blog Title">If not for the courage of the fearless crew the Minnow would be lost and me were never meant to be the first thing you know old Jeds a million</a></h3>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Blog Title">If not for the courage of the fearless crew the Minnow would be lost and me were never meant to be the first thing you know old Jeds a million</a></h3>
                             </div>
                             <div class="entry-content">
                                 <p>Got a dream and we just know now we're gonna make our dream come true. Their house is a museum where people come to see &#180;em. They really are a scream the Addams Family. Boy the way Glen Miller played. Songs that made the hit parade. Guys like us we had it made. Those were the days. On your mark get set and go now. Got a dream and we just know now we're gonna make our dream come true to this group.</p>
@@ -182,18 +182,18 @@
                         <aside class="widget widget-latestposts">
                             <h3 class="widget-title">Latest Posts</h3>
                             <div class="latest-content">
-                                <a href="{{ route('bovile-blog-post') }}"><img src="{{ asset('front/bovile/images/blog/latest-post1.jpg') }}" alt="blogpost-thumb1"></a>
-                                <h3><a href="{{ route('bovile-blog-post') }}" title="Latest Post">Goodness lemur save much alas crud dear</a></h3>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}"><img src="{{ asset('front/bovile/images/blog/latest-post1.jpg') }}" alt="blogpost-thumb1"></a>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Latest Post">Goodness lemur save much alas crud dear</a></h3>
                                 <span>09 Oct 2015</span>
                             </div>
                             <div class="latest-content">
-                                <a href="{{ route('bovile-blog-post') }}"><img src="{{ asset('front/bovile/images/blog/latest-post2.jpg') }}" alt="blogpost-thumb2"></a>
-                                <h3><a href="{{ route('bovile-blog-post') }}" title="Latest Post">However much enor mous merrily jeez</a></h3>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}"><img src="{{ asset('front/bovile/images/blog/latest-post2.jpg') }}" alt="blogpost-thumb2"></a>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Latest Post">However much enor mous merrily jeez</a></h3>
                                 <span>22 Nov 2015</span>
                             </div>
                             <div class="latest-content">
-                                <a href="{{ route('bovile-blog-post') }}"><img src="{{ asset('front/bovile/images/blog/latest-post3.jpg') }}" alt="blogpost-thumb3"></a>
-                                <h3><a href="{{ route('bovile-blog-post') }}" title="Latest Post">Flinched more mam moth this pompously</a></h3>
+                                <a href="{{ route('bovile-pages',['bovile','blog_post']) }}"><img src="{{ asset('front/bovile/images/blog/latest-post3.jpg') }}" alt="blogpost-thumb3"></a>
+                                <h3><a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Latest Post">Flinched more mam moth this pompously</a></h3>
                                 <span>04 Dec 2015</span>
                             </div>
                         </aside>

@@ -12,14 +12,27 @@ Route::group($main,function () {
 $prefix = [
     'namespace' => 'App\Http\Controllers\Front\Projects'
 ];
+
 Route::group($prefix,function (){
-    include 'projects/bovile.php';
-    include 'projects/brand.php';
-    include 'projects/building_ceramics.php';
-    include 'projects/clothing.php';
-    include 'projects/stayfit.php';
-    include 'projects/monsterat.php';
-    include 'projects/jahanrahat.php';
+    // Project name & package
+    $projects = [
+        'bovile',
+        'brand',
+        'buildingceramics',
+        'clothing',
+        'stayfit',
+        'monsterat',
+        'jahanrahat'
+    ];
+    foreach ($projects as $project) {
+        $settings = [
+            'namespace' => $project
+        ];
+        Route::group($settings,function () use ($project) {
+            Route::get('/{'.$project.'}', ['uses' => 'IndexController@index','as' => $project.'-index']);
+            Route::get('/{'.$project.'}/{page}', ['uses' => 'IndexController@pages','as' => $project.'-pages']);
+        });
+    }
 });
 Route::post('/webhook',function (){
     return response('OK',200);

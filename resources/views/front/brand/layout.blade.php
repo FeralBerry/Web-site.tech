@@ -91,7 +91,7 @@ App Landing Page
 
 				<!-- phone image -->
 				<div class="col-md-6">
-				<img src="{{ asset('front/brand/images/headers-phone.png') }}" alt="phone" class="header-phone img-responsive wow fadeInRight">
+				<img src="{{ asset('front/brand/images/header-phone.png') }}" alt="phone" class="header-phone img-responsive wow fadeInRight">
 				</div>
 			</div>
 		</div>
@@ -530,7 +530,7 @@ App Landing Page
 						<li><a class="wow fadeInUp" href="https://instagram.com/" data-wow-delay="0.6s"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 				</div>
-			<div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright Juke 2015 - Template by <a href="https://www.webthemez.com">Webthemez</a></div>
+			<div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright June 2015 - Template by <a href="https://web-site.tech">Web-site.tech</a></div>
 			<a href="#" class="scrollToTop"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</div>
 	</div>

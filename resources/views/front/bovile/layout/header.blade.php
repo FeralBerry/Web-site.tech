@@ -19,7 +19,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 logo-block">
-                    <a href="{{ route('bovile-index') }}" title="Logo"><img src="{{ asset('front/bovile/images/logo.png') }}" alt="Logo" /></a>
+                    <a href="{{ route('bovile-index',['bovile']) }}" title="Logo"><img src="{{ asset('front/bovile/images/logo.png') }}" alt="Logo" /></a>
                 </div>
             </div>
         </div><!-- Container /- -->
@@ -47,33 +47,33 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{ route('bovile-index') }}" title="Logo">Bovile</a>
+                    <a class="navbar-brand" href="{{ route('bovile-index',['bovile']) }}" title="Logo">Bovile</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="{{ route('bovile-index') }}" title="Home">Home</a></li>
-                        <li><a href="{{ route('bovile-about') }}" title="About Us">About Us</a></li>
-                        <li><a href="{{ route('bovile-services') }}" title="Services">Services</a></li>
+                        <li class="active"><a href="{{ route('bovile-index',['bovile']) }}" title="Home">Home</a></li>
+                        <li><a href="{{ route('bovile-pages',['bovile','about']) }}" title="About Us">About Us</a></li>
+                        <li><a href="{{ route('bovile-pages',['bovile','services']) }}" title="Services">Services</a></li>
                         <li class="dropdown">
                             <a href="#" title="Pages" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                             <i class="ddl-switch fa fa-angle-down"></i>
                             <ul class="dropdown-menu">
-                                <li><a href="{{ route('bovile-gallery') }}" title="Gallery">Gallery</a></li>
-                                <li><a href="{{ route('bovile-pricing') }}" title="Pricing">Pricing</a></li>
-                                <li><a href="{{ route('bovile-faq') }}" title="Faq">FAQ</a></li>
-                                <li><a href="{{ route('bovile-404') }}" title="404">404</a></li>
+                                <li><a href="{{ route('bovile-pages',['bovile','gallery']) }}" title="Gallery">Gallery</a></li>
+                                <li><a href="{{ route('bovile-pages',['bovile','pricing']) }}" title="Pricing">Pricing</a></li>
+                                <li><a href="{{ route('bovile-pages',['bovile','faq']) }}" title="Faq">FAQ</a></li>
+                                <li><a href="{{ route('bovile-pages',['bovile','404']) }}" title="404">404</a></li>
                             </ul>
                         </li>
                         <li><a href="#" title="Our Team">Shop</a></li>
                         <li class="dropdown">
-                            <a href="{{ route('bovile-blog') }}" title="Latest News" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Latest News</a>
+                            <a href="{{ route('bovile-pages',['bovile','blog']) }}" title="Latest News" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Latest News</a>
                             <i class="ddl-switch fa fa-angle-down"></i>
                             <ul class="dropdown-menu">
-                                <li><a href="{{ route('bovile-blog') }}" title="Blog">Blog</a></li>
-                                <li><a href="{{ route('bovile-blog-post') }}" title="Single Post">Single</a></li>
+                                <li><a href="{{ route('bovile-pages',['bovile','blog']) }}" title="Blog">Blog</a></li>
+                                <li><a href="{{ route('bovile-pages',['bovile','blog_post']) }}" title="Single Post">Single</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ route('bovile-contact') }}" title="Contact Us">Contact Us</a></li>
+                        <li><a href="{{ route('bovile-pages',['bovile','contact']) }}" title="Contact Us">Contact Us</a></li>
                     </ul>
                 </div>
             </nav><!-- Navigation -->
