@@ -310,13 +310,13 @@
             <i class="zmdi zmdi-more"></i>
         </li>
         <li>
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr"><div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span class="right-nav-text">Special Pages</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr"><div class="pull-left"><i class="zmdi zmdi-google-section mr-20"></i><span class="right-nav-text">Special Pages</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="pages_dr" class="collapse collapse-level-1 two-col-list">
                 <li>
                     <a href="blank.html">Blank Page</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#auth_dr">Authantication pages<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#auth_dr">Authantication section<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
                     <ul id="auth_dr" class="collapse collapse-level-2">
                         <li>
                             <a href="login.html">Login</a>
@@ -347,7 +347,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#error_dr">error pages<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#error_dr">error section<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
                     <ul id="error_dr" class="collapse collapse-level-2">
                         <li>
                             <a href="404.html">Error 404</a>

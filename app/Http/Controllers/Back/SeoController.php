@@ -18,13 +18,13 @@ class SeoController extends Controller
         $data = array_merge($this->data,[
             'seo' => $this->getSeo(),
         ]);
-        return view('back.pages.seo.get.index', $data);
+        return view('back.section.seo.get.index', $data);
     }
     public function postIndex(){
         $data = array_merge($this->data,[
 
         ]);
-        return view('back.pages.seo.post.index',$data);
+        return view('back.section.seo.post.index',$data);
     }
     public function post(Request $request){
         DB::table('seo')
@@ -51,7 +51,7 @@ class SeoController extends Controller
             'seo' => $seo,
             'id' => $id
         ]);
-        return view('back.pages.seo.update.index',$data);
+        return view('back.section.seo.update.index',$data);
     }
     public function update($id,Request $request){
         DB::table('seo')

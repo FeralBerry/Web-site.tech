@@ -8,7 +8,7 @@ $bovile = [
 ];
 Route::group($bovile,function (){
     Route::get('/', ['uses' => 'IndexController@index','as' => 'bovile-index']);
-    Route::get('/{page}', ['uses' => 'IndexController@pages','as' => 'bovile-pages']);
+    Route::get('/{page}', ['uses' => 'IndexController@section','as' => 'bovile-section']);
     /*Route::get('/services', ['uses' => 'IndexController@services','as' => 'bovile-services']);
     Route::get('/gallery', ['uses' => 'IndexController@gallery','as' => 'bovile-gallery']);
     Route::get('/pricing', ['uses' => 'IndexController@pricing','as' => 'bovile-pricing']);

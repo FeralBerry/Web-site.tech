@@ -10,6 +10,6 @@ class HeaderController extends Controller
         $data = array_merge([
             'id' => $id
         ]);
-        return view("front.monsterat.pages.headers.header$id", $data);
+        return view("front.monsterat.section.headers.header$id", $data);
     }
 }
