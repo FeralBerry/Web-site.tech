@@ -38,6 +38,7 @@ export default {
                     this.sliderLength = this.sliderInfo.length
             })
         },
+
     }
 }
 </script>

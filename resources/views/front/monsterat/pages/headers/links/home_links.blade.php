@@ -1,0 +1,11 @@
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index') }}"><span class="mi"></span><span class="txt">Home Default</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-pricing') }}"><span class="mi"></span><span class="txt">Home Pricing</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-products') }}"><span class="mi"></span><span class="txt">Home Products</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-history') }}"><span class="mi"></span><span class="txt">Home History</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-popular-video') }}"><span class="mi"></span><span class="txt">Home Popular</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-animated') }}"><span class="mi"></span><span class="txt">Home Animated</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-one_page') }}"><span class="mi"></span><span class="txt">Home One Page</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-simple') }}"><span class="mi"></span><span class="txt">Home Simple</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-popular-slider') }}"><span class="mi"></span><span class="txt">Home Popular</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-store') }}"><span class="mi"></span><span class="txt">Home Store</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-index-shop') }}"><span class="mi"></span><span class="txt">Home Shop</span><span class="di icon-arrow-right9"></span></a></li>

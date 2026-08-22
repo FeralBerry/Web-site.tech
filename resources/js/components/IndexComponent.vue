@@ -1,45 +1,70 @@
 <template>
-    <HeaderComponent/>
+    <modal></modal>
+    <header-component></header-component>
     <router-view>
 
     </router-view>
-    <FooterComponent/>
+    <footer-component></footer-component>
 </template>
-
-<style scoped>
-
-</style>
 <script>
-import HeaderComponent from "./front/layuots/HeaderComponent.vue";
-import FooterComponent from "./front/layuots/FooterComponent.vue";
 
-export default {
-    name: 'IndexComponent',
-    data() {
+import {defineComponent} from "vue";
+import HeaderComponent from "@/Components/front/Markup/HeaderComponent.vue";
+import FooterComponent from "@/Components/front/Markup/FooterComponent.vue";
+import Modal from "@/Components/front/Sections/Modal.vue";
+
+
+export default defineComponent({
+    data(){
         return {
-            lang: null,
-            successAuth: null,
+            auth: false,
+            open_modal: false,
+            lang: navigator.language,
         }
     },
-    components: {
-        HeaderComponent,
-        FooterComponent
-    },
+    components: {FooterComponent, HeaderComponent,Modal},
     mounted() {
-
+        this.contentMenu()
     },
-    methods: {
-        setCookie: function() {
-            if(this.lang == null){
-                this.lang = 'eng'
-            }
-            if(Cookies.get('location') == null){
-                Cookies.set('location', this.lang, { expires: 7 })
-            }
+    watch:{
+        '$route'(to,from) {
+
         },
     },
-    beforeMount() {
-        this.setCookie()
-    },
-}
+    methods:{
+        checkAuth(){
+            axios.post('/check_auth')
+                .then((res) => {
+                    this.auth = res.data !== 0;
+                })
+        },
+        contentMenu(){
+            document.onclick = hideMenu;
+            document.oncontextmenu = rightClick;
+
+            function hideMenu() {
+                document.getElementById(
+                    "contextMenu").style.display = "none"
+            }
+            function rightClick(e) {
+                e.preventDefault();
+
+                if (document.getElementById(
+                    "contextMenu").style.display === "block")
+                    hideMenu();
+                else {
+                    let menu = document
+                        .getElementById("contextMenu")
+
+                    menu.style.display = 'block';
+                    menu.style.left = e.pageX + "px";
+                    menu.style.top = e.pageY + "px";
+                }
+            }
+        }
+    }
+})
 </script>
+<style>
+
+</style>

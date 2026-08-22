@@ -1,0 +1,6 @@
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="shop_layout=small.html"><span class="mi"></span><span class="txt">Small</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="shop_layout=medium.html"><span class="mi"></span><span class="txt">Medium</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="shop_layout=left.html"><span class="mi"></span><span class="txt">Sidebar Left</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="shop_layout=right.html"><span class="mi"></span><span class="txt">Sidebar Right</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="shop_sidebar_single=left.html"><span class="mi"></span><span class="txt">Single Product Sidebar Left</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="coffee-milkshake.html"><span class="mi"></span><span class="txt">Single Product Sidebar Right</span><span class="di icon-arrow-right9"></span></a></li>

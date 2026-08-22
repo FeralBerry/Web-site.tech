@@ -5,24 +5,21 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
-        "php": "^8.1",
-        "cboden/ratchet": "^0.4.4",
-        "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^10.10",
-        "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8",
-      "ext-http": "*"
+        "defstudio/telegraph": "^1.72",
+        "laravel/sanctum": "*"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.9.1",
-        "laravel/breeze": "^1.29",
-        "laravel/pint": "^1.0",
-        "laravel/sail": "^1.18",
-        "laravel/ui": "^4.6",
-        "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^7.0",
-        "phpunit/phpunit": "^10.1",
-        "spatie/laravel-ignition": "^2.0"
+        "laravel/framework": "^v13.26.0",
+        "fakerphp/faker": "^v1.24.1",
+        "league/flysystem-local": "^3.31.0",
+        "laravel/breeze": "^v2.4.2",
+        "laravel/pint": "^v1.30.5",
+        "laravel/sail": "^v1.66.0",
+        "laravel/ui": "^4.6.3",
+        "mockery/mockery": "^1.6.13",
+        "nunomaduro/collision": "^v8.9.5",
+        "phpunit/phpunit": "^13.3.1",
+        "spatie/laravel-ignition": "^2.9.1"
     },
     "autoload": {
         "psr-4": {
@@ -57,6 +54,7 @@
         }
     },
     "config": {
+        "platform-check": false,
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,

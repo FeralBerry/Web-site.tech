@@ -1,0 +1,11 @@
+@extends('front.clothing.layout.layout')
+@section('breadcrumb')
+    @include('front.clothing.layout.breadcrumb')
+@endsection
+@section('content')
+    @include('front.clothing.section.aboutUs')
+    @include('front.clothing.section.chooseUs')
+    @include('front.clothing.section.better')
+    @include('front.clothing.section.ourTeam')
+    @include('front.clothing.section.quickview')
+@endsection

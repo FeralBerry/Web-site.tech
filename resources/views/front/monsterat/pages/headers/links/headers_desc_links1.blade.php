@@ -1,0 +1,6 @@
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-header',1) }}"><span class="mi"></span><span class="txt">Header Version 1</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-header',2) }}"><span class="mi"></span><span class="txt">Header Version 2</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-header',3) }}"><span class="mi"></span><span class="txt">Header Version 3</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-header',4) }}"><span class="mi"></span><span class="txt">Header Version 4</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-header',5) }}"><span class="mi"></span><span class="txt">Header Version 5</span><span class="di icon-arrow-right9"></span></a></li>
+<li class="menu-item" data-mm="false" data-mmc="2"><a href="{{ route('monsterat-header',6) }}"><span class="mi"></span><span class="txt">Header Version 6</span><span class="di icon-arrow-right9"></span></a></li>

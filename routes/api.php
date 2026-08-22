@@ -6,6 +6,7 @@ include 'web\front\front_api.php';
 include 'web\back\users\users_api.php';
 include 'web\back\admin\admin_api.php';
 
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

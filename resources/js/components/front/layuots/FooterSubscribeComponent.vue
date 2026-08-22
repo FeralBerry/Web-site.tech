@@ -24,8 +24,8 @@
                     <li><a title="Sitemap" href="#">Sitemap</a></li>
                     <li><a title="Community" href="#">Community</a></li>
                     <li><a title="membership" href="#">membership</a></li>
-                    <li><a title="Events" href="eventlist-page.html">Events</a></li>
-                    <li><a title="Contact us" href="contactus.html">Contact us</a></li>
+                    <li><a title="Events" href="#">Events</a></li>
+                    <li><a title="Contact us" href="#">Contact us</a></li>
                 </ul>
             </aside><!-- Quick Links Widget /- -->
 
@@ -36,17 +36,17 @@
                     <i class="fa fa-map-marker"></i>
                     <p>09 Design Street, Mitri, Victoria, Australia.</p>
                 </div>-->
-<!--                <div class="contactinfo-box">
-                    <i class="fa fa-phone"></i>
-                    <p>
-                        <a title="0112345678" href="tel:+0112345678">+01 123 456 78</a>
-                        <a title="0112355689" href="tel:+0112355689">+01 123 556 89</a>
-                    </p>
-                </div>-->
+
                 <div class="contactinfo-box">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     <p>
                         <a href="mailto:admin@web-site.tech" title="admin@web-site.tech">admin@web-site.tech</a>
+                    </p>
+                </div>
+                <div class="contactinfo-box">
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                    <p>
+                        <a title="https://t.me/+mN-jol9DHFYxOWQ6" href="https://t.me/+mN-jol9DHFYxOWQ6">https://t.me/+mN-jol9DHFYxOWQ6</a>
                     </p>
                 </div>
             </aside><!-- ContactUs Widget /- -->
