@@ -12,31 +12,31 @@
                                 <div class="tab-content active-portfolio-area-2">
                                     <div role="tabpanel" class="tab-pane active" id="view1">
                                         <div class="product-img">
-                                            <a href="#"><img src="{{ asset('front/clothing') }}/images/product/01.jpg" alt="Single portfolio" /></a>
+                                            <a href="#"><img src="{{ asset('front/clothing/images/product/01.jpg') }}" alt="Single portfolio" /></a>
                                         </div>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="view2">
                                         <div class="product-img">
-                                            <a href="#"><img src="{{ asset('front/clothing') }}/images/product/02.jpg" alt="Single portfolio" /></a>
+                                            <a href="#"><img src="{{ asset('front/clothing/images/product/02.jpg') }}" alt="Single portfolio" /></a>
                                         </div>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="view3">
                                         <div class="product-img">
-                                            <a href="#"><img src="{{ asset('front/clothing') }}/images/product/03.jpg" alt="Single portfolio" /></a>
+                                            <a href="#"><img src="{{ asset('front/clothing/images/product/03.jpg') }}" alt="Single portfolio" /></a>
                                         </div>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="view4">
                                         <div class="product-img">
-                                            <a href="#"><img src="{{ asset('front/clothing') }}/images/product/04.jpg" alt="Single portfolio" /></a>
+                                            <a href="#"><img src="{{ asset('front/clothing/images/product/04.jpg') }}" alt="Single portfolio" /></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-more-views-2">
                                     <div class="thumbnail-carousel-modal-2" data-tabs="tabs">
-                                        <a href="#view1" aria-controls="view1" data-toggle="tab"><img src="{{ asset('front/clothing') }}/images/product/01.jpg" alt="" /></a>
-                                        <a href="#view2" aria-controls="view2" data-toggle="tab"><img src="{{ asset('front/clothing') }}/images/product/02.jpg" alt="" /></a>
-                                        <a href="#view3" aria-controls="view3" data-toggle="tab"><img src="{{ asset('front/clothing') }}/images/product/03.jpg" alt="" /></a>
-                                        <a href="#view4" aria-controls="view4" data-toggle="tab"><img src="{{ asset('front/clothing') }}/images/product/04.jpg" alt="" /></a>
+                                        <a href="#view1" aria-controls="view1" data-toggle="tab"><img src="{{ asset('front/clothing/images/product/01.jpg') }}" alt="" /></a>
+                                        <a href="#view2" aria-controls="view2" data-toggle="tab"><img src="{{ asset('front/clothing/images/product/02.jpg') }}" alt="" /></a>
+                                        <a href="#view3" aria-controls="view3" data-toggle="tab"><img src="{{ asset('front/clothing/images/product/03.jpg') }}" alt="" /></a>
+                                        <a href="#view4" aria-controls="view4" data-toggle="tab"><img src="{{ asset('front/clothing/images/product/04.jpg') }}" alt="" /></a>
                                     </div>
                                 </div>
                             </div>
