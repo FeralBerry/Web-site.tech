@@ -14,9 +14,9 @@ Version: 1.0
 	01. jQuery MeanMenu
 	02. wow js active
 	03. scrollUp jquery active
-	04. slick carousel 
+	04. slick carousel
 
- 
+
 ======================================
 [ End table content ]
 ======================================*/
@@ -39,17 +39,17 @@ Version: 1.0
 
 	/*--------------------------
 	 scrollUp
-	---------------------------- */	
+	---------------------------- */
 	$.scrollUp({
         scrollText: "<i class='zmdi zmdi-arrow-merge'></i>",
         easingType: 'linear',
         scrollSpeed: 900,
         animation: 'fade'
-    }); 
+    });
 
 	/*-------------------------------------------
-	04. slick carousel 
-	--------------------------------------------- */    
+	04. slick carousel
+	--------------------------------------------- */
 	$('.new-arrival-slider-active').slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
@@ -65,8 +65,8 @@ Version: 1.0
 	{  breakpoint: 767,   settings: { slidesToShow: 2, }   },
 	{  breakpoint: 479,   settings: { slidesToShow: 1, }   },
 	]
-	});  
-	
+	});
+
 	$('.ctg-slider-active').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -97,7 +97,7 @@ Version: 1.0
 	{  breakpoint: 479,   settings: { slidesToShow: 1, }   },
 	]
 	});
-	
+
 	$('.active-slider').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -112,7 +112,7 @@ Version: 1.0
 	{  breakpoint: 479,   settings: { slidesToShow: 1, }   },
 	]
 	});
-	
+
 	$('.total-brand').slick({
 	slidesToShow: 6,
 	slidesToScroll: 1,
@@ -127,7 +127,7 @@ Version: 1.0
 	{  breakpoint: 479,   settings: { slidesToShow: 3, }   },
 	]
 	});
-	
+
 	$('.team-carasoul').slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
@@ -142,7 +142,7 @@ Version: 1.0
 	{  breakpoint: 479,   settings: { slidesToShow: 1, }   },
 	]
 	});
-    
+
     $('.total-blog').slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
@@ -157,7 +157,7 @@ Version: 1.0
 	{  breakpoint: 479,   settings: { slidesToShow: 1, }   },
 	]
 	});
-	
+
 	$('.total-blog-2').slick({
 	slidesToShow: 2,
 	slidesToScroll: 1,
@@ -186,7 +186,7 @@ Version: 1.0
 	{  breakpoint: 479,   settings: { slidesToShow: 1, }   },
 	]
 	});
-	
+
     /*----------------------------
      fancybox active
     ------------------------------ */
@@ -194,20 +194,19 @@ Version: 1.0
         $('.fancybox').fancybox();
     });
 
-    
-    /*************************
-      tooltip
-    *************************/
+
+
+
 	    $('[data-toggle="tooltip"]').tooltip({
         animated: 'fade',
         placement: 'top',
         container: 'body'
     });
 
-	
+
 	/*----------------------------
 	 price-slider active
-	------------------------------ */  
+	------------------------------ */
 	  $( "#slider-range" ).slider({
 	   range: true,
 	   min: 40,
@@ -219,7 +218,7 @@ Version: 1.0
 	  });
 	  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 	   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-	   
+
     /*----------------------------
     Countdown active
     ------------------------------ */
@@ -230,26 +229,26 @@ Version: 1.0
             $this.html(event.strftime('<span class="cdown days"><span class="time-count">%-D</span> <p>Days</p></span><span class="cdown hour"><span class="time-count">%-H</span> <p>Hour</p></span><span class="cdown minutes"><span class="time-count">%M</span> <p>Min</p></span> <span class="cdown second"><span class="time-count">%S</span> <p>Sec</p></span>'));
         });
     });
-	
-	
-    
+
+
+
     /*----------------------------
 	 active match height
-	------------------------------ */ 
+	------------------------------ */
     $(function () {
         $('.item').matchHeight();
     });
-    
+
     /*----------------------------
 	 treeview active
-	------------------------------ */  
+	------------------------------ */
 	$("#cat-treeview ul").treeview({
 		animated: "normal",
 		persist: "location",
 		collapsed: true,
 		unique: true,
 	});
-	
+
 	/*----------------------------
      cart-plus-minus-button
     ------------------------------ */
@@ -269,9 +268,9 @@ Version: 1.0
         }
         $button.parent().find("input").val(newVal);
     });
-	
-	
-	
+
+
+
 		$('.acc-toggle').on('click', function(){
 		if ($('.acc-toggle input').is(':checked')) {
 			$('.create-acc-body').slideDown();
@@ -279,7 +278,7 @@ Version: 1.0
 			$('.create-acc-body').slideUp();
 		}
 	});
-		
+
 	$('.ship-toggle').on('click', function(){
 		if ($('.ship-toggle input').is(':checked')) {
 			$('.ship-acc-body').slideDown();
@@ -287,14 +286,14 @@ Version: 1.0
 			$('.ship-acc-body').slideUp();
 		}
 	});
-		
-	
-	
+
+
+
 
 })(jQuery);
 
 	$(window).scroll(function() {
-	if ($(this).scrollTop() > 1){ 
+	if ($(this).scrollTop() > 1){
 		$('#sticky-header').addClass("sticky");
 	  }
 	  else{

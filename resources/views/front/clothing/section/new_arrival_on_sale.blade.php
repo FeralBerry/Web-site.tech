@@ -11,7 +11,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="product-ctg-img pos-rltv product-overlay">
-                                        <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
+                                        <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -32,7 +32,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="product-ctg-img pos-rltv product-overlay">
-                                        <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
+                                        <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -55,7 +55,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="product-ctg-img pos-rltv product-overlay">
-                                        <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
+                                        <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -76,7 +76,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="product-ctg-img pos-rltv product-overlay">
-                                        <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
+                                        <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -107,7 +107,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="product-ctg-img pos-rltv product-overlay">
-                                            <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
+                                            <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -128,7 +128,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="product-ctg-img pos-rltv product-overlay">
-                                            <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
+                                            <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -151,7 +151,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="product-ctg-img pos-rltv product-overlay">
-                                            <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
+                                            <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -172,7 +172,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="product-ctg-img pos-rltv product-overlay">
-                                            <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
+                                            <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -204,7 +204,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="product-ctg-img pos-rltv product-overlay">
-                                            <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
+                                            <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -225,7 +225,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="product-ctg-img pos-rltv product-overlay">
-                                            <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
+                                            <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -248,7 +248,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="product-ctg-img pos-rltv product-overlay">
-                                            <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
+                                            <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s01.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -269,7 +269,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="product-ctg-img pos-rltv product-overlay">
-                                            <a href="single-product.html"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
+                                            <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"><img src="{{ asset('front/clothing/images/product/s02.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">

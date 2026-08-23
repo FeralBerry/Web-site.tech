@@ -16,7 +16,7 @@
                                 <div class="new">New</div>
                             </div>
                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                <a href="single-product.html"> <img alt="" src="{{ asset('front/clothing/images/product/01.jpg') }}" class="primary-image">
+                                <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"> <img alt="" src="{{ asset('front/clothing/images/product/01.jpg') }}" class="primary-image">
                                     <img alt="" src="{{ asset('front/clothing/images/product/02.jpg') }}" class="secondary-image">
                                 </a>
                             </div>
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         <div class="product-text">
-                            <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a> </div>
+                            <div class="prodcut-name"> <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}">Quisque fringilla</a> </div>
                             <div class="prodcut-ratting-price">
                                 <div class="prodcut-price">
                                     <div class="new-price"> $220 </div>
@@ -43,7 +43,7 @@
                     <div class="single-product">
                         <div class="product-img">
                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                <a href="single-product.html"> <img alt="" src="{{ asset('front/clothing/images/product/03.jpg') }}" class="primary-image"> <img alt="" src="{{ asset('front/clothing') }}/images/product/04.jpg" class="secondary-image"> </a>
+                                <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"> <img alt="" src="{{ asset('front/clothing/images/product/03.jpg') }}" class="primary-image"> <img alt="" src="{{ asset('front/clothing/images/product/04.jpg') }}" class="secondary-image"> </a>
                             </div>
                             <div class="product-icon socile-icon-tooltip text-center">
                                 <ul>
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <div class="product-text">
-                            <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a> </div>
+                            <div class="prodcut-name"> <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}">Quisque fringilla</a> </div>
                             <div class="prodcut-ratting-price">
                                 <div class="prodcut-price">
                                     <div class="new-price"> $220 </div>
@@ -71,7 +71,7 @@
                                 <div class="new">Sale</div>
                             </div>
                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                <a href="single-product.html"> <img alt="" src="{{ asset('front/clothing/images/product/02.jpg') }}" class="primary-image"> <img alt="" src="{{ asset('front/clothing') }}/images/product/03.jpg" class="secondary-image"> </a>
+                                <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"> <img alt="" src="{{ asset('front/clothing/images/product/02.jpg') }}" class="primary-image"> <img alt="" src="{{ asset('front/clothing/images/product/03.jpg') }}" class="secondary-image"> </a>
                             </div>
                             <div class="product-icon socile-icon-tooltip text-center">
                                 <ul>
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="product-text">
-                            <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a> </div>
+                            <div class="prodcut-name"> <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}">Quisque fringilla</a> </div>
                             <div class="prodcut-ratting-price">
                                 <div class="prodcut-ratting">
                                     <a href="#"><i class="fa fa-star"></i></a>
@@ -103,7 +103,7 @@
                     <div class="single-product">
                         <div class="product-img">
                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                <a href="single-product.html"> <img alt="" src="{{ asset('front/clothing/images/product/04.jpg') }}" class="primary-image"> <img alt="" src="{{ asset('front/clothing') }}/images/product/03.jpg" class="secondary-image"> </a>
+                                <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"> <img alt="" src="{{ asset('front/clothing/images/product/04.jpg') }}" class="primary-image"> <img alt="" src="{{ asset('front/clothing/images/product/03.jpg') }}" class="secondary-image"> </a>
                             </div>
                             <div class="product-icon socile-icon-tooltip text-center">
                                 <ul>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         <div class="product-text">
-                            <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a> </div>
+                            <div class="prodcut-name"> <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}">Quisque fringilla</a> </div>
                             <div class="prodcut-ratting-price">
                                 <div class="prodcut-price">
                                     <div class="new-price"> $220 </div>
@@ -128,7 +128,7 @@
                     <div class="single-product">
                         <div class="product-img">
                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                <a href="single-product.html"> <img alt="" src="{{ asset('front/clothing/images/product/05.jpg') }}" class="primary-image"> <img alt="" src="{{ asset('front/clothing') }}/images/product/06.jpg" class="secondary-image"> </a>
+                                <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}"> <img alt="" src="{{ asset('front/clothing/images/product/05.jpg') }}" class="primary-image"> <img alt="" src="{{ asset('front/clothing/images/product/06.jpg') }}" class="secondary-image"> </a>
                             </div>
                             <div class="product-icon socile-icon-tooltip text-center">
                                 <ul>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                         <div class="product-text">
-                            <div class="prodcut-name"> <a href="single-product.html">Quisque fringilla</a> </div>
+                            <div class="prodcut-name"> <a href="{{ route('clothing-pages',['clothing','singleProduct']) }}">Quisque fringilla</a> </div>
                             <div class="prodcut-ratting-price">
                                 <div class="prodcut-ratting">
                                     <a href="#"><i class="fa fa-star"></i></a>

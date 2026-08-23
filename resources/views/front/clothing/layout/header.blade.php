@@ -159,25 +159,25 @@
                                     <div class="mega-menu-area mma-970">
                                         <ul class="single-mega-item">
                                             <li class="menu-title uppercase">Shortcode-01</li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBanner']) }}" target="_blank">shortcode-banner</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBest']) }}" target="_blank">too-on-sale</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBlog']) }}" target="_blank">Short Blog Item</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBrand']) }}" target="_blank">Brand Product</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBrandSlider']) }}" target="_blank">Brand Slider</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBanner']) }}" >shortcode-banner</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBest']) }}" >too-on-sale</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBlog']) }}" >Short Blog Item</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBrand']) }}" >Brand Product</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBrandSlider']) }}" >Brand Slider</a></li>
                                         </ul>
                                         <ul class="single-mega-item">
                                             <li class="menu-title uppercase">Shortcode-02</li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBreadcrumb']) }}" target="_blank">Breadcrumb</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeRelatedProduct']) }}" target="_blank">Related Product</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeService']) }}" target="_blank">Service</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeSkill']) }}" target="_blank">Skill</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeSlider']) }}" target="_blank">Slider</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeBreadcrumb']) }}" >Breadcrumb</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeRelatedProduct']) }}" >Related Product</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeService']) }}" >Service</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeSkill']) }}" >Skill</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeSlider']) }}" >Slider</a></li>
                                         </ul>
                                         <ul class="single-mega-item">
                                             <li class="menu-title uppercase">Shortcode-03</li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeTeam']) }}" target="_blank">Team</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeTestimonial']) }}" target="_blank">Testimonial</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeWhyChooseUs']) }}" target="_blank">Why Choose Us</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeTeam']) }}" >Team</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeTestimonial']) }}" >Testimonial</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shortcodeWhyChooseUs']) }}" >Why Choose Us</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -185,37 +185,37 @@
                                     <div class="mega-menu-area mma-970">
                                         <ul class="single-mega-item coloum-4">
                                             <li class="menu-title uppercase">Pages-01</li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','aboutUs']) }}" target="_blank">About-us</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','blog']) }}" target="_blank">Blog</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','blogRight']) }}" target="_blank">Blog-Right</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','single-blog']) }}" target="_blank">Single Blog</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','singleBlogRight']) }}" target="_blank">Single Blog Right</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','blogFull']) }}" target="_blank">Blog-Fullwidth</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','aboutUs']) }}">About-us</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','blog']) }}">Blog</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','blogRight']) }}">Blog-Right</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','single-blog']) }}">Single Blog</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','singleBlogRight']) }}">Single Blog Right</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','blogFull']) }}">Blog-Fullwidth</a></li>
                                         </ul>
                                         <ul class="single-mega-item coloum-4">
                                             <li class="menu-title uppercase">pages-02</li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','blogFullRight']) }}" target="_blank">Blog Ful Rightl</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','cart']) }}" target="_blank">Cart</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','checkout']) }}" target="_blank">Checkout</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','compare']) }}" target="_blank">Compare</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','completeOrder']) }}" target="_blank">Complete Order</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','contactUs']) }}" target="_blank">Contact US</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','blogFullRight']) }}" >Blog Ful Rightl</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','cart']) }}" >Cart</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','checkout']) }}" >Checkout</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','compare']) }}" >Compare</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','completeOrder']) }}" >Complete Order</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','contactUs']) }}" >Contact US</a></li>
                                         </ul>
                                         <ul class="single-mega-item coloum-4">
                                             <li class="menu-title uppercase">pages-03</li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','login']) }}" target="_blank">Login</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','myAccount']) }}" target="_blank">My Account</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shopFullGrid']) }}" target="_blank">Shop Full Grid</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shopFullList']) }}" target="_blank">Shop Full List</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shopListRightSidebar']) }}" target="_blank">Shop List Right</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shopList']) }}" target="_blank">Shop List</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','login']) }}" >Login</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','myAccount']) }}" >My Account</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shopFullGrid']) }}" >Shop Full Grid</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shopFullList']) }}" >Shop Full List</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shopListRightSidebar']) }}" >Shop List Right</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shopList']) }}" >Shop List</a></li>
                                         </ul>
                                         <ul class="single-mega-item coloum-4">
                                             <li class="menu-title uppercase">pages-03</li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shopRightSidebar']) }}" target="_blank">Shop Right</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','shop']) }}" target="_blank">Shop</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','singleProduct']) }}" target="_blank">Single Prodcut</a></li>
-                                            <li><a href="{{ route('clothing-pages',['clothing','wishlist']) }}" target="_blank">Wishlist</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shopRightSidebar']) }}" >Shop Right</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','shop']) }}" >Shop</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','singleProduct']) }}" >Single Prodcut</a></li>
+                                            <li><a href="{{ route('clothing-pages',['clothing','wishlist']) }}" >Wishlist</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -290,50 +290,50 @@
                                             </li>
                                             <li><a href="#">Shortcode</a>
                                                 <ul class="single-mega-item">
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBanner']) }}" target="_blank">shortcode-banner</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBest']) }}" target="_blank">too-on-sale</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBlog']) }}" target="_blank">Short Blog Item</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBrand']) }}" target="_blank">Brand Product</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBrandSlider']) }}" target="_blank">Brand Slider</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBanner']) }}" >shortcode-banner</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBest']) }}" >too-on-sale</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBlog']) }}" >Short Blog Item</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBrand']) }}" >Brand Product</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBrandSlider']) }}" >Brand Slider</a></li>
 
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBreadcrumb']) }}" target="_blank">Breadcrumb</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeRelatedProduct']) }}" target="_blank">Related Product</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeService']) }}" target="_blank">Service</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeSkill']) }}" target="_blank">Skill</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeSlider']) }}" target="_blank">Slider</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeBreadcrumb']) }}" >Breadcrumb</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeRelatedProduct']) }}" >Related Product</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeService']) }}" >Service</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeSkill']) }}" >Skill</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeSlider']) }}" >Slider</a></li>
 
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeTeam']) }}" target="_blank">Team</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeTestimonial']) }}" target="_blank">Testimonial</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeWhyChooseUs']) }}" target="_blank">Why Choose Us</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeTeam']) }}" >Team</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeTestimonial']) }}" >Testimonial</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shortcodeWhyChooseUs']) }}" >Why Choose Us</a></li>
                                                 </ul>
                                             </li>
                                             <li> <a href="#">Pages</a>
                                                 <ul class="single-mega-item coloum-4">
-                                                    <li><a href="{{ route('clothing-pages',['clothing','aboutUs']) }}" target="_blank">About-us</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','blog']) }}" target="_blank">Blog</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','blogRight']) }}" target="_blank">Blog-Right</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','single-blog']) }}" target="_blank">Single Blog</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','singleBlogRight']) }}" target="_blank">Single Blog Right</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','blogFull']) }}" target="_blank">Blog-Fullwidth</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','aboutUs']) }}" >About-us</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','blog']) }}" >Blog</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','blogRight']) }}" >Blog-Right</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','single-blog']) }}" >Single Blog</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','singleBlogRight']) }}" >Single Blog Right</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','blogFull']) }}" >Blog-Fullwidth</a></li>
                                                     <li class="menu-title uppercase">pages-02</li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','blogFullRight']) }}" target="_blank">Blog Ful Rightl</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','cart']) }}" target="_blank">Cart</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','checkout']) }}" target="_blank">Checkout</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','compare']) }}" target="_blank">Compare</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','completeOrder']) }}" target="_blank">Complete Order</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','contactUs']) }}" target="_blank">Contact US</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','blogFullRight']) }}" >Blog Ful Rightl</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','cart']) }}" >Cart</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','checkout']) }}" >Checkout</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','compare']) }}" >Compare</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','completeOrder']) }}" >Complete Order</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','contactUs']) }}" >Contact US</a></li>
                                                     <li class="menu-title uppercase">pages-03</li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','login']) }}" target="_blank">Login</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','myAccount']) }}" target="_blank">My Account</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shopFullGrid']) }}" target="_blank">Shop Full Grid</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shopFullList']) }}" target="_blank">Shop Full List</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shopListRightSidebar']) }}" target="_blank">Shop List Right</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shopList']) }}" target="_blank">Shop List</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','login']) }}" >Login</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','myAccount']) }}" >My Account</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shopFullGrid']) }}" >Shop Full Grid</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shopFullList']) }}" >Shop Full List</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shopListRightSidebar']) }}" >Shop List Right</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shopList']) }}" >Shop List</a></li>
                                                     <li class="menu-title uppercase">pages-03</li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shopRightSidebar']) }}" target="_blank">Shop Right</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','shop']) }}" target="_blank">Shop</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','singleProduct']) }}" target="_blank">Single Prodcut</a></li>
-                                                    <li><a href="{{ route('clothing-pages',['clothing','wishlist']) }}" target="_blank">Wishlist</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shopRightSidebar']) }}" >Shop Right</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','shop']) }}" >Shop</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','singleProduct']) }}" >Single Prodcut</a></li>
+                                                    <li><a href="{{ route('clothing-pages',['clothing','wishlist']) }}" >Wishlist</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="{{ route('clothing-pages',['clothing','aboutUs']) }}">about</a></li>
