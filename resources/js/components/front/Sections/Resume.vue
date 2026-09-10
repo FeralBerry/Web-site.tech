@@ -253,7 +253,7 @@
         <div class="parallax-bg bg1" >
             <div class="container">
                 <div class="padding30 text-center">
-                    <a :href="'/base/theme/Resume.docx'" class="btn btn-flat-line btn-default light-font " download><i class="fa fa-download"></i>  Скачать резюме</a>
+                    <a :href="'/base/theme/Resume.docx'" class="btn btn-flat-line btn-default light-font " download target="_blank"><i class="fa fa-download"></i>  Скачать резюме</a>
 <!--                    <span class="space-inline-15 hidden-xs"></span>
                     <a href="#" class="btn btn-flat-line btn-default light-font"><i class="fa fa-print"></i> Напечатать резюме</a>-->
                 </div>

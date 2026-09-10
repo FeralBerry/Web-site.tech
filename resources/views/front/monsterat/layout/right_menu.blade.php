@@ -6,31 +6,31 @@
                 <ul id="menu-sidebar-menu" class="menu">
                     <li class="menu-item menu-item-has-children"><a href="#">Home</a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="{{ route('monsterat-index') }}">Home Default</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-pricing') }}">Home Pricing</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-products') }}">Home Products</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-history') }}">Home History</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-popular-video') }}">Home Popular</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-animated') }}">Home Animated</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-one_page') }}">Home One Page</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-simple') }}">Home Simple</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-popular-slider') }}">Home Popular</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-store') }}">Home Product 2</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-index-shop') }}">Home Product 3</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-index', 'monsterat') }}">Home Default</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','pricing']) }}">Home Pricing</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','products']) }}">Home Products</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','history']) }}">Home History</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','popular-video']) }}">Home Popular</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','animated']) }}">Home Animated</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','one_page']) }}">Home One Page</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','simple']) }}">Home Simple</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','popular-slider']) }}">Home Popular</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','store']) }}">Home Product 2</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','shop']) }}">Home Product 3</a></li>
                         </ul>
                     </li>
                     <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="{{ route('monsterat-about') }}">About Us</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-about1') }}">About us 2</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-about2') }}">About us 3</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-teh') }}">Blank page</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-contact') }}">Contact Us</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-contact1') }}">Contacts 2</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-pricing') }}">Pricing Plans</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-services') }}">Services</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-services1') }}">Services 2</a></li>
-                            <li class="menu-item"><a href="{{ route('monsterat-services2') }}">Services 3</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','about']) }}">About Us</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','about1']) }}">About us 2</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','about2']) }}">About us 3</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','teh']) }}">Blank page</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','contact']) }}">Contact Us</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','contact1']) }}">Contacts 2</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','pricing']) }}">Pricing Plans</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','services']) }}">Services</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','services1']) }}">Services 2</a></li>
+                            <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','services2']) }}">Services 3</a></li>
                         </ul>
                     </li>
                     <li class="menu-item"><a href="#">Blog</a></li>

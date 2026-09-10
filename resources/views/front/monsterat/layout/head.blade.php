@@ -14,20 +14,20 @@
 
 @if(
     Route::currentRouteName() == "monsterat-index" ||
-    Route::currentRouteName() == "monsterat-index-pricing" ||
-    Route::currentRouteName() == "monsterat-index-products" ||
-    Route::currentRouteName() == "monsterat-index-history" ||
-    Route::currentRouteName() == "monsterat-index-popular-video" ||
-    Route::currentRouteName() == "monsterat-index-animated" ||
-    Route::currentRouteName() == "monsterat-index-one_page" ||
-    Route::currentRouteName() == "monsterat-index-simple"
+    Route::currentRouteName() == "monsterat-pricing" ||
+    Route::currentRouteName() == "monsterat-products" ||
+    Route::currentRouteName() == "monsterat-history" ||
+    Route::currentRouteName() == "monsterat-popular-video" ||
+    Route::currentRouteName() == "monsterat-animated" ||
+    Route::currentRouteName() == "monsterat-one_page" ||
+    Route::currentRouteName() == "monsterat-simple"
 )
     <link rel='stylesheet' href='{{asset('front/monsterat/css/default.css')}}' type='text/css' media='all' />
 @endif
 @if(
-    Route::currentRouteName() == "monsterat-index-popular-slider" ||
-    Route::currentRouteName() == "monsterat-index-store" ||
-    Route::currentRouteName() == "monsterat-index-shop"
+    Route::currentRouteName() == "monsterat-popular-slider" ||
+    Route::currentRouteName() == "monsterat-store" ||
+    Route::currentRouteName() == "monsterat-shop"
 )
     <link rel='stylesheet' href='{{asset('front/monsterat/css/header-black.css')}}' type='text/css' media='all' />
 @endif

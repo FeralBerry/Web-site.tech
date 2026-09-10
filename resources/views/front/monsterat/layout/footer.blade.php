@@ -91,11 +91,11 @@
                 <span id="span_801f_18">MONTSERRAT  ©  2016 | All Rights Reserved</span> </div>
             <nav class="footer-menu nz-clearfix">
                 <ul id="footer-menu" class="menu">
-                    <li class="menu-item"><a href="{{ route('monsterat-about') }}">About us</a></li>
+                    <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','about']) }}">About us</a></li>
                     <li class="menu-item"><a href="#">Blog</a></li>
-                    <li class="menu-item"><a href="{{ route('monsterat-contact') }}">Contact us</a></li>
+                    <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','contact']) }}">Contact us</a></li>
                     <li class="menu-item"><a href="#">FAQ</a></li>
-                    <li class="menu-item"><a href="{{ route('monsterat-services') }}">Services</a></li>
+                    <li class="menu-item"><a href="{{ route('monsterat-pages',['monsterat','services']) }}">Services</a></li>
                     <li class="menu-item"><a href="#">Shop</a></li>
                 </ul>
             </nav>

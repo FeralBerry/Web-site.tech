@@ -35,39 +35,39 @@
 
 @if(
     Route::currentRouteName() == "monsterat-index" ||
-    Route::currentRouteName() == "monsterat-index-pricing" ||
+    Route::currentRouteName() == "monsterat-pricing" ||
     Route::currentRouteName() == "monsterat-header"
 )
     @include('front.monsterat.pages.slider.1.slider_script')
 @endif
 
 @if(
-    Route::currentRouteName() == "monsterat-index-products" ||
-    Route::currentRouteName() == "monsterat-index-history" ||
-    Route::currentRouteName() == "monsterat-index-popular-video"
+    Route::currentRouteName() == "monsterat-products" ||
+    Route::currentRouteName() == "monsterat-history" ||
+    Route::currentRouteName() == "monsterat-popular-video"
 
 )
     @include('front.monsterat.pages.slider.2.slider_script')
 @endif
 @if(
-    Route::currentRouteName() == "monsterat-index-animated" ||
-    Route::currentRouteName() == "monsterat-index-one_page" ||
-    Route::currentRouteName() == "monsterat-index-simple"
+    Route::currentRouteName() == "monsterat-animated" ||
+    Route::currentRouteName() == "monsterat-one_page" ||
+    Route::currentRouteName() == "monsterat-simple"
 )
     @include('front.monsterat.pages.slider.3.slider_script')
 @endif
 @if(
-    Route::currentRouteName() == "monsterat-index-popular-slider"
+    Route::currentRouteName() == "monsterat-popular-slider"
 )
     @include('front.monsterat.pages.slider.4.slider_script')
 @endif
 @if(
-    Route::currentRouteName() == "monsterat-index-store"
+    Route::currentRouteName() == "monsterat-store"
 )
     @include('front.monsterat.pages.slider.5.slider_script')
 @endif
 @if(
-    Route::currentRouteName() == "monsterat-index-shop"
+    Route::currentRouteName() == "monsterat-shop"
 )
     @include('front.monsterat.pages.slider.6.slider_script')
 @endif

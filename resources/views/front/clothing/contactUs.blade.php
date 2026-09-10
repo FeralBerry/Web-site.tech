@@ -1,1 +1,9 @@
-<?php
+@extends('front.clothing.layout.layout')
+@section('breadcrumb')
+    @include('front.clothing.layout.breadcrumb')
+@endsection
+@section('content')
+    @include('front.clothing.section.map')
+    @include('front.clothing.section.contact')
+    @include('front.clothing.section.quickview')
+@endsection

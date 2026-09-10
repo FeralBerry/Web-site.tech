@@ -2,7 +2,7 @@
     <div class="mob-header-top nz-clearfix">
         <div class="container">
             <div class="logo logo-mob">
-                <a href="{{ route('monsterat-index') }}" title="Montserrat">
+                <a href="{{ route('monsterat-index','monsterat') }}" title="Montserrat">
                     <img id="img_dca7_0" src="{{ asset('front/monsterat/upload/logo_black%402.png') }}" alt="Montserrat">
                 </a>
             </div>
@@ -107,7 +107,7 @@
     <div class="mob-header-top nz-clearfix">
         <div class="container">
             <div class="logo logo-mob">
-                <a href="{{ route('monsterat-index') }}" title="Montserrat">
+                <a href="{{ route('monsterat-index','monsterat') }}" title="Montserrat">
                     <img id="img_4eba_0" src="{{ asset('front/monsterat/upload/logo_black%402.png') }}" alt="Montserrat">
                 </a>
             </div>
