@@ -69,7 +69,7 @@
                 <div class="container nz-clearfix">
 
                     <div class="logo logo-desk">
-                        <a href="{{ route('monsterat-index') }}" title="Montserrat">
+                        <a href="{{ route('monsterat-index','monsterat') }}" title="Montserrat">
                             <img class="normal-logo" id="img_92f8_1" src="{{ asset('front/monsterat/upload/logo_black%402.png') }}" alt="Montserrat">
                             <img class="fixed-logo" id="img_92f8_2" src="{{ asset('front/monsterat/upload/logo_black%402.png') }}" alt="Montserrat">
                         </a>
